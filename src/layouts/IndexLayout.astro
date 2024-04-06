@@ -1,23 +1,33 @@
+---
+import Meta from "../components/Meta.astro";
+import Hero from "../components/Hero.astro";
+import Namebar from "../components/NameBar.astro";
+import Footer from "../components/Footer.astro";
+import WeirdStripes from "../components/WeirdStripes.astro";
+import IndexColumnOne from "../components/IndexColumnOne.astro";
+import IndexColumnTwo from "../components/IndexColumnTwo.astro";
+import IndexColumnThree from "../components/IndexColumnThree.astro";
+import NameBar from "../components/NameBar.astro";
+---
 <!doctype html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <Meta />
+  </head>
 
   <body>
     
       <container>
-          <div class="div1">Tim Eaton - Links</div>
-          <div class="div2"><p>
-            By default, the auto-placement algorithm looks linearly through the grid
-            without backtracking; if it has to skip some empty spaces to place a larger
-            item, it will not return to fill those spaces. To change this behavior,
-            specify the dense keyword in grid-auto-flow.
-          </p></div>
-          <div class="div3">Get started with a new Astro project!
-            Open any of these templates in your choice of online code editor, or view the source code on GitHub.</div>
-          <div class="div4"> \Blue Moon....</div>
-          <div class="div5">Solomon Grundy, born on a monday...</div>
-          <div class="div6">What goes here?</div>
-          <div class="div7">Footer me, scotty</div>
+          <div class="div1"><NameBar /></div>
+          <div class="div2">
+            <Hero />
+            <WeirdStripes />
+          </div>
+          <div class="div3">I has friendses?
+          <div class="div4"><IndexColumnOne /></div>
+          <div class="div5"><IndexColumnTwo /></div>
+          <div class="div6"><IndexColumnThree /></div>
+          <div class="div7"><Footer /></div>
           </div>
       </container>
   </body>
