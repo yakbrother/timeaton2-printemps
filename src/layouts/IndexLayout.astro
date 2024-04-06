@@ -8,7 +8,9 @@ import IndexColumnOne from "../components/IndexColumnOne.astro";
 import IndexColumnTwo from "../components/IndexColumnTwo.astro";
 import IndexColumnThree from "../components/IndexColumnThree.astro";
 import NameBar from "../components/NameBar.astro";
+import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,39 +18,49 @@ import NameBar from "../components/NameBar.astro";
   </head>
 
   <body>
-    
-      <container>
-          <div class="div1"><NameBar /></div>
-          <div class="div2">
-            <Hero />
-            <WeirdStripes />
-          </div>
-          <div class="div3">I has friendses?
-          <div class="div4"><IndexColumnOne /></div>
-          <div class="div5"><IndexColumnTwo /></div>
-          <div class="div6"><IndexColumnThree /></div>
-          <div class="div7"><Footer /></div>
-          </div>
-      </container>
+    <container>
+      <div class="div1"><NameBar /></div>
+      <div class="div2">
+        <Hero />
+        <WeirdStripes />
+      </div>
+      <div class="div3">
+        I has friendses?
+        <div class="div4"><IndexColumnOne /></div>
+        <div class="div5"><IndexColumnTwo /></div>
+        <div class="div6"><IndexColumnThree /></div>
+        <div class="div7"><Footer /></div>
+      </div>
+    </container>
+    <style>
+      container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+      }
+      .div1 {
+        grid-area: 1 / 1 / 2 / 5;
+      }
+      .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .div3 {
+        grid-area: 2 / 2 / 4 / 5;
+      }
+      .div4 {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+      .div5 {
+        grid-area: 4 / 3 / 5 / 4;
+      }
+      .div6 {
+        grid-area: 4 / 4 / 5 / 5;
+      }
+      .div7 {
+        grid-area: 5 / 1 / 6 / 5;
+      }
+    </style>
   </body>
-
-
-  <style>
-  container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
-    }
-    .div1 { grid-area: 1 / 1 / 2 / 5; }
-    .div2 { grid-area: 2 / 1 / 3 / 2; }
-    .div3 { grid-area: 2 / 2 / 4 / 5; }
-    .div4 { grid-area: 4 / 2 / 5 / 3; }
-    .div5 { grid-area: 4 / 3 / 5 / 4; }
-    .div6 { grid-area: 4 / 4 / 5 / 5; }
-    .div7 { grid-area: 5 / 1 / 6 / 5; }
-    </script>
-
-
-  </html>
+</html>
