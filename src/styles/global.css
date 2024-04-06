@@ -1,0 +1,23 @@
+root {
+	--primary: hsl(267, 73%, 63%);
+    --primary-dark: hsl(267, 73%, 53%);
+    --primary700: hsl(267, 73%, 74%);
+    --primary200:  \hsl(267, 73%, 84%);
+	--secondary: hsl(52, 99%, 62%);
+    --secondary-dark: hsl(52, 99%, 53%);
+    --secondary700: hsl(52, 99%, 74%);
+    --secondary200:  hsl(52, 99%, 84%);
+    --tertiary: hsl(172, 98%, 48%);
+    --tertiary-dark: hsl(172, 98%, 33%);
+    --tertiary700: hsl(172, 98%, 64%);
+    --tertiary200: hsl(172, 98%, 84%);
+    --accent: hsl(324, 84%, 65%);
+    --accent-light: hsl(324, 84%, 85%);
+    --special-dark: hsl(324, 84%, 45%);
+	--darkest: hsl(324, 61%, 22%);
+    --lightest: hsl(326, 57%, 92%);
+	--gray-gradient: rgba(var(--gray-dark), 50%),var(--gray-light);
+	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+		0 16px 32px rgba(var(--gray), 33%);
+}
+
