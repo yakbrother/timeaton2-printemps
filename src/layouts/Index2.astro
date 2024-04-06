@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head> </head>
+
+  <body>
+    <container>
+      <div class="div1">Timothy Eaton</div>
+      <div class="div2">
+        Whereas a common understanding of these rights and freedoms is
+      </div>
+      <div class="div3">This is 3</div>
+      <div class="div4">This is 4</div>
+      <div class="div5">Five am I</div>
+      <div class="div6">Somewhere it should be empty</div>
+      <div class="div7">Bet you can't get</div>
+    </container>
+
+    <style>
+      container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+      }
+      .div1 {
+        grid-area: 1 / 2 / 2 / 5;
+      }
+      .div2 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .div3 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      .div4 {
+        grid-area: 2 / 3 / 3 / 4;
+      }
+      .div5 {
+        grid-area: 2 / 4 / 3 / 5;
+      }
+      .div6 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .div7 {
+        grid-area: 3 / 2 / 4 / 5;
+      }
+    </style>
+  </body>
+</html>
