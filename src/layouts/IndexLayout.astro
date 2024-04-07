@@ -1,7 +1,7 @@
 ---
 import Meta from "../components/Meta.astro";
 import Hero from "../components/Hero.astro";
-import Namebar from "../components/NameBar.astro";
+import Social from "../components/Social.astro";
 import Footer from "../components/Footer.astro";
 import WeirdStripes from "../components/WeirdStripes.astro";
 import IndexColumnOne from "../components/IndexColumnOne.astro";
@@ -20,19 +20,22 @@ import "../styles/global.css";
   <body>
     <container>
       <div class="div1"><NameBar /></div>
-      <div class="div2">
+      <div class="div2"><Social /></div>
+      <div class="div3">
         <Hero />
         <WeirdStripes />
       </div>
-      <div class="div3">
-        I has friendses?
-        <div class="div4"><IndexColumnOne /></div>
-        <div class="div5"><IndexColumnTwo /></div>
-        <div class="div6"><IndexColumnThree /></div>
-        <div class="div7"><Footer /></div>
-      </div>
+      <div class="div4"><IndexColumnOne /></div>
+      <div class="div5"><IndexColumnTwo /></div>
+      <div class="div6"><IndexColumnThree /></div>
     </container>
+    <Footer />
     <style>
+      body {
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 0% 0%, rgba(247, 235, 220, 1) 0%, rgba(2, 245, 212, 0.45) 0%, rgba(247, 235, 220, 0.58) 39%);
+      }
+      }
       container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -57,9 +60,6 @@ import "../styles/global.css";
       }
       .div6 {
         grid-area: 4 / 4 / 5 / 5;
-      }
-      .div7 {
-        grid-area: 5 / 1 / 6 / 5;
       }
     </style>
   </body>
