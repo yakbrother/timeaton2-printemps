@@ -1,32 +1,51 @@
-root {
-	--primary: hsl(267, 73%, 63%);
+:root {
+	  --primary: hsl(267, 73%, 63%);
     --primary-dark: hsl(267, 73%, 53%);
-    --primary700: hsl(267, 73%, 74%);
-    --primary200:  \hsl(267, 73%, 84%);
-	--secondary: hsl(52, 99%, 62%);
+    --primary-lighter: hsl(267, 73%, 74%);
+    --primary-lighest: hsl(267, 73%, 84%);
+	  --secondary: hsl(52, 99%, 62%);
     --secondary-dark: hsl(52, 99%, 53%);
-    --secondary700: hsl(52, 99%, 74%);
-    --secondary200:  hsl(52, 99%, 84%);
+    --secondary-lighter: hsl(52, 99%, 74%);
+    --secondary-lighest: hsl(52, 99%, 84%);
     --tertiary: hsl(172, 98%, 48%);
     --tertiary-dark: hsl(172, 98%, 33%);
-    --tertiary700: hsl(172, 98%, 64%);
-    --tertiary200: hsl(172, 98%, 84%);
+    --tertiary-lighter: hsl(172, 98%, 64%);
+    --tertiary-lighest: hsl(172, 98%, 84%);
     --accent: hsl(324, 84%, 65%);
     --accent-light: hsl(324, 84%, 85%);
     --special-dark: hsl(324, 84%, 45%);
-	--darkest: hsl(324, 61%, 22%);
+   	--darkest: hsl(324, 61%, 22%);
     --lightest: hsl(326, 57%, 92%);
 }
 
+html {
+    font-family: sans-serif;
+}
 
 body {
-	font-family: 'Poppy', sans-serif;
-	margin: 0;
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
 	padding: 18px 0;
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.7;
+    color: var(--darkest);
+    width: 90%;
+    max-width: 1280px;
+    background-color: (247, 235, 220, 0.58);
+    background:
+        radial-gradient(
+          circle at 0% 0%,
+          rgba(247, 235, 220, 1) 0%,
+          rgba(2, 245, 212, 0.45) 0%,
+          rgba(247, 235, 220, 0.58) 39%
+        );
+        background-repeat: no-repeat;
 }
+
+* {
+    box-sizing: border-box;
+  }
 
 h1,
 h2,
@@ -35,7 +54,6 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--primary));
 	line-height: 1.2;
 }
 h1 {
@@ -104,5 +122,70 @@ blockquote {
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--primary700));
+	border-top: 1px solid var(--primary-lighter);
 }
+  
+
+
+
+  /* nav styles */
+
+  .torta {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .torta .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  }
+  
+  .nav-links {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: #ff9776;
+    display: none;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #ff9776;
+  }
+  
+  .expanded {
+    display: unset;
+  }
+  
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 5em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .torta {
+        display: none;
+      }
+  }
