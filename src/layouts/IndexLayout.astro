@@ -8,7 +8,6 @@ import IndexColumnOne from "../components/IndexColumnOne.astro";
 import IndexColumnTwo from "../components/IndexColumnTwo.astro";
 import IndexColumnThree from "../components/IndexColumnThree.astro";
 import NameBar from "../components/NameBar.astro";
-import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -19,8 +18,10 @@ import "../styles/global.css";
 
   <body>
     <container>
-      <div class="div1"><NameBar /></div>
-      <WeirdStripes />
+      <div class="div1">
+        <NameBar />
+        <WeirdStripes />
+      </div>
       <div class="div2"><Social /></div>
       <div class="div3">
         <Hero />
@@ -31,16 +32,6 @@ import "../styles/global.css";
     </container>
     <Footer />
     <style>
-      body {
-        /* global 92%+ browsers support */
-        backbround-color: rgba(247, 235, 220, 0.58) 39%;
-        background: radial-gradient(
-          circle at 0% 0%,
-          rgba(247, 235, 220, 1) 0%,
-          rgba(2, 245, 212, 0.45) 0%,
-          rgba(247, 235, 220, 0.58) 39%
-        );
-      }
       container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
