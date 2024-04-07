@@ -20,10 +20,10 @@ import "../styles/global.css";
   <body>
     <container>
       <div class="div1"><NameBar /></div>
+      <WeirdStripes />
       <div class="div2"><Social /></div>
       <div class="div3">
         <Hero />
-        <WeirdStripes />
       </div>
       <div class="div4"><IndexColumnOne /></div>
       <div class="div5"><IndexColumnTwo /></div>
@@ -32,9 +32,14 @@ import "../styles/global.css";
     <Footer />
     <style>
       body {
-    /* global 92%+ browsers support */
-    background: radial-gradient(circle at 0% 0%, rgba(247, 235, 220, 1) 0%, rgba(2, 245, 212, 0.45) 0%, rgba(247, 235, 220, 0.58) 39%);
-      }
+        /* global 92%+ browsers support */
+        backbround-color: rgba(247, 235, 220, 0.58) 39%;
+        background: radial-gradient(
+          circle at 0% 0%,
+          rgba(247, 235, 220, 1) 0%,
+          rgba(2, 245, 212, 0.45) 0%,
+          rgba(247, 235, 220, 0.58) 39%
+        );
       }
       container {
         display: grid;
