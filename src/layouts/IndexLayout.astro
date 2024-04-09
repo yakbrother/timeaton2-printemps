@@ -17,11 +17,11 @@ import Top from "../components/Top.astro";
   </head>
 
   <body>
+    <header>
+      <Top />
+    </header>
     <container>
-      <div class="div1">
-        <Top />
-        <WeirdStripes />
-      </div>
+      <div class="div1"><WeirdStripes /></div>
       <div class="div2"><Social /></div>
       <div class="div3">
         <Hero />
@@ -38,6 +38,17 @@ import Top from "../components/Top.astro";
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 12px;
         grid-row-gap: 12px;
+        width: 90%;
+        max-width: 1280px;
+        maring: 0 auto;
+      }
+      header {
+        width: 90%;
+        maring: 0 auto;
+        max-width: 1280px;
+      }
+      footer {
+        widht: 100%;
       }
       .div1 {
         grid-area: 1 / 1 / 2 / 5;
