@@ -1,4 +1,25 @@
+:root {
+  --lilac900: #5f4e5f;
+  --lilac700: #927792;
+  --lilac500: #c8a2c8;
+  --lilac300: #d6b9d6;
+  --lilac100: #f1e7f1;
 
+  --beige900: #593c38;
+  --beige700: #875853;
+  --beige500: #b8776f;
+  --beige300: #cb9891;
+  --beige100: #efdcd9;
+  
+  --beige: #b8776f;
+  --tan: #e7b476;
+  --green: #857451;
+  --blue-500: #7fcce3;
+  --orange: #e57a00;
+  --purple: #8d039b;
+  --gray-dark: #454E54;
+  --gray-light #EEEEEE;
+}
 
 /* :root {
 	  --primary: hsl(267, 73%, 63%);
