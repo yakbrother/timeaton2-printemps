@@ -93,9 +93,26 @@ body {
 	line-height: 1.7;
     color: var(--darkest);
     width: 100%;
-    background: rgb(171,186,171);
-    background: linear-gradient(90deg, rgba(171,186,171,1) 21%, rgba(242,215,191,0.8043811274509804) 74%, rgba(255,221,195,0.7035407913165266) 100%);
-        background-repeat: no-repeat;
+    background-image: linear-gradient(
+  210deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(274deg 100% 21%) 6%,
+  hsl(293deg 100% 21%) 12%,
+  hsl(309deg 100% 24%) 18%,
+  hsl(319deg 100% 30%) 25%,
+  hsl(327deg 100% 34%) 31%,
+  hsl(332deg 100% 39%) 38%,
+  hsl(337deg 100% 43%) 44%,
+  hsl(346deg 83% 51%) 51%,
+  hsl(359deg 92% 60%) 57%,
+  hsl(10deg 100% 60%) 63%,
+  hsl(20deg 100% 58%) 70%,
+  hsl(30deg 100% 55%) 76%,
+  hsl(38deg 100% 50%) 82%,
+  hsl(44deg 100% 50%) 88%,
+  hsl(50deg 100% 50%) 94%,
+  hsl(55deg 100% 50%) 100%
+);
 
 }
 
