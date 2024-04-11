@@ -7,7 +7,7 @@ import WeirdStripes from "../components/WeirdStripes.astro";
 import IndexColumnOne from "../components/IndexColumnOne.astro";
 import IndexColumnTwo from "../components/IndexColumnTwo.astro";
 import IndexColumnThree from "../components/IndexColumnThree.astro";
-import Top from "../components/Top.astro";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -17,100 +17,94 @@ import Top from "../components/Top.astro";
   </head>
 
   <body>
+    <Header />
+    <WeirdStripes />
     <container>
       <div class="angry-grid">
-        <div id="item-0"><Hero /></div>
-        <div id="item-1"><Social /></div>
-        <div id="item-2">Text and more text....</div>
-        <div id="item-3">&nbsp;</div>
-        <div id="item-4"><IndexColumnOne /></div>
-        <div id="item-5">
-          <IndexColumnTwo /><div>
-            <div id="item-6"><IndexColumnThree /></div>
-          </div>
-          <Top />
-          <WeirdStripes />
-          <Footer />
-          <style>
-            .angry-grid {
-              display: grid;
-
-              grid-template-rows: 1fr 1fr 1fr;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-
-              gap: 0px;
-              height: 100%;
-            }
-
-            #item-0 {
-              background-color: #a5bd6e;
-              grid-row-start: 1;
-              grid-column-start: 1;
-
-              grid-row-end: 2;
-              grid-column-end: 2;
-            }
-            #item-1 {
-              background-color: #dd7d8b;
-              grid-row-start: 1;
-              grid-column-start: 2;
-
-              grid-row-end: 2;
-              grid-column-end: 5;
-            }
-            #item-2 {
-              background-color: #a5adda;
-              grid-row-start: 2;
-              grid-column-start: 1;
-
-              grid-row-end: 3;
-              grid-column-end: 2;
-            }
-            #item-3 {
-              background-color: #8a669e;
-              grid-row-start: 3;
-              grid-column-start: 1;
-
-              grid-row-end: 4;
-              grid-column-end: 3;
-            }
-            #item-4 {
-              background-color: #adf7d9;
-              grid-row-start: 3;
-              grid-column-start: 3;
-
-              grid-row-end: 4;
-              grid-column-end: 4;
-            }
-            #item-5 {
-              background-color: #a7ffdd;
-              grid-row-start: 3;
-              grid-column-start: 4;
-
-              grid-row-end: 4;
-              grid-column-end: 5;
-            }
-            #item-6 {
-              background-color: #9ceeb5;
-              grid-row-start: 2;
-              grid-column-start: 2;
-
-              grid-row-end: 3;
-              grid-column-end: 5;
-            }
-
-            header {
-              width: 100%;
-              maring: 0 auto;
-              max-width: 1280px;
-            }
-            footer {
-              padding-top: 0;
-              width: 100%;
-            }
-          </style>
-        </div>
+        <div id="item-0"></div>
+        <div id="item-1"><Hero /></div>
+        <div id="item-2"><Social /></div>
+        <div id="item-3"><IndexColumnOne /></div>
+        <div id="item-4"><IndexColumnTwo /></div>
+        <div id="item-5"><IndexColumnThree /></div>
+        <div id="item-6">aefk.djskdjfkdjh gl jld</div>
       </div>
+
+      <Footer />
+      <style>
+        .body {
+          background: D1AB9A;
+        }
+        .angry-grid {
+          display: grid;
+
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+
+          gap: 0px;
+          height: 100%;
+        }
+
+        #item-0 {
+          grid-row-start: 1;
+          grid-column-start: 1;
+
+          grid-row-end: 2;
+          grid-column-end: 2;
+        }
+        #item-1 {
+          grid-row-start: 1;
+          grid-column-start: 2;
+
+          grid-row-end: 2;
+          grid-column-end: 5;
+        }
+        #item-2 {
+          grid-row-start: 2;
+          grid-column-start: 1;
+
+          grid-row-end: 3;
+          grid-column-end: 2;
+        }
+        #item-3 {
+          grid-row-start: 3;
+          grid-column-start: 1;
+
+          grid-row-end: 4;
+          grid-column-end: 3;
+        }
+        #item-4 {
+          grid-row-start: 3;
+          grid-column-start: 3;
+
+          grid-row-end: 4;
+          grid-column-end: 4;
+        }
+        #item-5 {
+          grid-row-start: 3;
+          grid-column-start: 4;
+
+          grid-row-end: 4;
+          grid-column-end: 5;
+        }
+        #item-6 {
+          grid-row-start: 2;
+          grid-column-start: 2;
+
+          grid-row-end: 3;
+          grid-column-end: 5;
+        }
+
+        header {
+          width: 100%;
+          maring: 0 auto;
+          max-width: 1280px;
+        }
+        footer {
+          padding-top: 0;
+          width: 100%;
+        }
+      </style>
     </container>
   </body>
 </html>
