@@ -21,11 +21,11 @@
   --tan50:  #fbecdc;
 
   --green900: #423a2b;
-  --green700: #875853;
+  --green700: #62563d;
   --green500: #857451;
   --green300: #a3957a;
-  --green100: #debab4;
-  --green50:  #efdcd9;
+  --green100: #c1b7a4;
+  --green50:  #e0dad1;
 
   --blue900: #40616b;
   --blue700: #5f95a5;
@@ -65,10 +65,9 @@ body {
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.7;
-    color: var(--tan700);
-    width: 100%;
-    background-color: #FCF9F8;
-
+  color: #ccc;
+  width: 100%;
+  background-color: #FCF9F8;
 }
 
 * {
@@ -171,10 +170,6 @@ a {
   background-size: 100%;
   text-decoration: underline;
 }
-
-
-
-
 
   /* nav styles */
 

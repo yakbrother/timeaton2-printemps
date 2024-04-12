@@ -11,31 +11,30 @@
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/resume">Resume</a>
-      <a href="/til">TIL</a>
       <a href="/blog">Blog</a>
       <div class="icon-6 w-icon-nav-menu"></div>
     </nav>
   </section>
+  <img src="/headerwaves.svg" style="width: 100%;" />
 </header>
-
 <style>
   header {
-    background-color: var(#452e3e);
+    background-color: var(--lilac900);
     color: var(--tan100);
-    height: 120px;
+    height: 100px;
     display: block;
+    z-index: 9998;
+    width: 95%;
+    margin: auto;
+    max-width: 1280px;
   }
 
-  header h1 {
-    color: lilac-700;
-    color:;
-  }
   section {
-    width: 90%;
-    max-width: 1280px;
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   div {
@@ -43,9 +42,9 @@
     display: inline;
   }
   h1 {
-    color: var(--beige700);
+    color: var(--orange100);
     display: inline;
-    font-family: "", monospace;
+    font-family: "Permanent Marker", monospace;
   }
   ul {
     margin: 0;
@@ -53,16 +52,15 @@
     float: right;
   }
   a {
+    font-family: "Permanent Marker", monospace;
     display: inline-block;
-    border-bottom: 2px solid white;
     text-decoration: none;
-    padding: 4px px;
+    padding: 12px;
   }
   a:hover,
   a:active,
   selected {
     display: inline-block;
-    border-bottum: 2px solid white;
     padding: 4px px;
   }
 </style>
