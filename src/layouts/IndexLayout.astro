@@ -17,94 +17,98 @@ import Header from "../components/Header.astro";
   </head>
 
   <body>
-    <Header />
-    <WeirdStripes />
-    <container>
-      <div class="angry-grid">
-        <div id="item-0"></div>
-        <div id="item-1"><Hero /></div>
-        <div id="item-2"><Social /></div>
-        <div id="item-3"><IndexColumnOne /></div>
-        <div id="item-4"><IndexColumnTwo /></div>
-        <div id="item-5"><IndexColumnThree /></div>
-        <div id="item-6">aefk.djskdjfkdjh gl jld</div>
-      </div>
+    <wrapper>
+      <Header />
+      <WeirdStripes />
+      <container>
+        <div class="angry-grid">
+          <div id="item-0"></div>
+          <div id="item-1"><Hero /></div>
+          <div id="item-2"><Social /></div>
+          <div id="item-3"><IndexColumnOne /></div>
+          <div id="item-4"><IndexColumnTwo /></div>
+          <div id="item-5"><IndexColumnThree /></div>
+          <div id="item-6">aefk.djskdjfkdjh gl jld</div>
+        </div>
 
-      <Footer />
-      <style>
-        .body {
-          background: D1AB9A;
-        }
-        .angry-grid {
-          display: grid;
+        <Footer />
+        D1AB9A
+        <style>
+          wrapper {
+            background: #d1ab9a;
+          }
+          .angry-grid {
+            display: grid;
 
-          grid-template-rows: 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
 
-          gap: 0px;
-          height: 100%;
-        }
+            grid-column-gap: 12px;
+            grid-row-gap: 12px;
+            height: 100%;
+          }
 
-        #item-0 {
-          grid-row-start: 1;
-          grid-column-start: 1;
+          #item-0 {
+            grid-row-start: 1;
+            grid-column-start: 1;
 
-          grid-row-end: 2;
-          grid-column-end: 2;
-        }
-        #item-1 {
-          grid-row-start: 1;
-          grid-column-start: 2;
+            grid-row-end: 2;
+            grid-column-end: 2;
+          }
+          #item-1 {
+            grid-row-start: 1;
+            grid-column-start: 2;
 
-          grid-row-end: 2;
-          grid-column-end: 5;
-        }
-        #item-2 {
-          grid-row-start: 2;
-          grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 5;
+          }
+          #item-2 {
+            grid-row-start: 2;
+            grid-column-start: 1;
 
-          grid-row-end: 3;
-          grid-column-end: 2;
-        }
-        #item-3 {
-          grid-row-start: 3;
-          grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 2;
+          }
+          #item-3 {
+            grid-row-start: 3;
+            grid-column-start: 1;
 
-          grid-row-end: 4;
-          grid-column-end: 3;
-        }
-        #item-4 {
-          grid-row-start: 3;
-          grid-column-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 3;
+          }
+          #item-4 {
+            grid-row-start: 3;
+            grid-column-start: 3;
 
-          grid-row-end: 4;
-          grid-column-end: 4;
-        }
-        #item-5 {
-          grid-row-start: 3;
-          grid-column-start: 4;
+            grid-row-end: 4;
+            grid-column-end: 4;
+          }
+          #item-5 {
+            grid-row-start: 3;
+            grid-column-start: 4;
 
-          grid-row-end: 4;
-          grid-column-end: 5;
-        }
-        #item-6 {
-          grid-row-start: 2;
-          grid-column-start: 2;
+            grid-row-end: 4;
+            grid-column-end: 5;
+          }
+          #item-6 {
+            grid-row-start: 2;
+            grid-column-start: 2;
 
-          grid-row-end: 3;
-          grid-column-end: 5;
-        }
+            grid-row-end: 3;
+            grid-column-end: 5;
+          }
 
-        header {
-          width: 100%;
-          maring: 0 auto;
-          max-width: 1280px;
-        }
-        footer {
-          padding-top: 0;
-          width: 100%;
-        }
-      </style>
-    </container>
+          header {
+            width: 100%;
+            maring: 0 auto;
+            max-width: 1280px;
+          }
+          footer {
+            padding-top: 0;
+            width: 100%;
+          }
+        </style>
+      </container>
+    </wrapper>
   </body>
 </html>

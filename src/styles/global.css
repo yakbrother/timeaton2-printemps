@@ -53,66 +53,21 @@
   --gray300: #EEEEEE;
 }
 
-/* :root {
-	  --primary: hsl(267, 73%, 63%);
-    --primary-dark: hsl(267, 73%, 53%);
-    --primary-lighter: hsl(267, 73%, 74%);
-    --primary-lighest: hsl(267, 73%, 84%);
-	  --secondary: hsl(52, 99%, 62%);
-    --secondary-dark: hsl(52, 99%, 53%);
-    --secondary-lighter: hsl(52, 99%, 74%);
-    --secondary-lighest: hsl(52, 99%, 84%);
-    --tertiary: hsl(172, 98%, 48%);
-    --tertiary-dark: hsl(172, 98%, 33%);
-    --tertiary-lighter: hsl(172, 98%, 64%);
-    --tertiary-lighest: hsl(172, 98%, 84%);
-    --accent: hsl(324, 84%, 65%);
-    --accent-light: hsl(324, 84%, 85%);
-    --special-dark: hsl(324, 84%, 45%);
-   	--darkest: hsl(324, 61%, 22%);
-    --lightest: rgb(247, 235, 220, 1);
-} */
-
 html {
     font-family: sans-serif;
 }
 
-.upward-shadow {
-    box-shadow:
-      2px 0px 0px 0px; hsl(0deg 60% 50% / 0.333),
-      4px 0px 0px 0px; hsl(0deg 60% 50% / 0.333),
-      6px 0px 0px 0px; hsl(0deg 60% 50% / 0.333);
-}
-
 body {
 	font-family:  'Josephin Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	margin: 0 auto;
+	margin: auto;
+  margin-top: 0;
 	padding: 0;
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.7;
-    color: var(--darkest);
+    color: var(--tan700);
     width: 100%;
-    background-image: linear-gradient(
-  210deg,
-  hsl(240deg 100% 20%) 0%,
-  hsl(274deg 100% 21%) 6%,
-  hsl(293deg 100% 21%) 12%,
-  hsl(309deg 100% 24%) 18%,
-  hsl(319deg 100% 30%) 25%,
-  hsl(327deg 100% 34%) 31%,
-  hsl(332deg 100% 39%) 38%,
-  hsl(337deg 100% 43%) 44%,
-  hsl(346deg 83% 51%) 51%,
-  hsl(359deg 92% 60%) 57%,
-  hsl(10deg 100% 60%) 63%,
-  hsl(20deg 100% 58%) 70%,
-  hsl(30deg 100% 55%) 76%,
-  hsl(38deg 100% 50%) 82%,
-  hsl(44deg 100% 50%) 88%,
-  hsl(50deg 100% 50%) 94%,
-  hsl(55deg 100% 50%) 100%
-);
+    background-color: #FCF9F8;
 
 }
 
