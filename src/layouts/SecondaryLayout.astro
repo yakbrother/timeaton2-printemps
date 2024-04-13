@@ -1,0 +1,82 @@
+---
+const { title, leadphoto, background } = Astro.props;
+
+import Meta from "../components/Meta.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Meta title="{title}" />
+  </head>
+
+  <body>
+    <Header />
+    <container>
+      <div class="angry-grid">
+        <slot />
+      </div>
+    </container>
+    <style>
+      container {
+        margin: auto;
+        margin-top: 100px;
+        width: 95%;
+        max-width: 1280px;
+        background-color: {background};
+        background: url({leadphoto});
+        backgroun-repeat: no-repeat;
+        background-position: top;
+      }
+      wrapper {
+        width: 90%;
+        max-width: 1280px;
+      }
+      footer {
+        padding-top: 0;
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+      }
+
+      .angry-grid {
+        display: grid;
+        padding-top: 250px;
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        gap: 0px;
+        height: 100%;
+      }
+
+      #page-title {
+        grid-row-start: 1;
+        grid-column-start: 1;
+
+        grid-row-end: 2;
+        grid-column-end: 4;
+      }
+      #sidebar {
+        grid-row-start: 2;
+        grid-column-start: 2;
+
+        grid-row-end: 3;
+        grid-column-end: 4;
+      }
+      #content {
+        grid-row-start: 2;
+        grid-column-start: 1;
+
+        grid-row-end: 3;
+        grid-column-end: 2;
+      }
+
+      .page-title h2 {
+        font-family: "BioRhyme", monospace;
+      }
+    </style>
+  </body>
+</html>
