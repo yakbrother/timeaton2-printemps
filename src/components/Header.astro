@@ -5,7 +5,7 @@ import Torta from "./Torta.astro";
 <header>
   <section>
     <div>
-      <h1>Timothy Eaton</h1>
+      <h1>TiMOTHY EATON</h1>
     </div>
     <Torta />
     <nav role="navigation" class="nav-links">
@@ -17,7 +17,36 @@ import Torta from "./Torta.astro";
     </nav>
   </section>
 </header>
+<div class="custom-shape-divider-top-1713269180">
+  <svg
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 120"
+    preserveAspectRatio="none"
+  >
+    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+  </svg>
+</div>
 <style>
+  .custom-shape-divider-top-1713269180 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1713269180 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+  }
+
+  .custom-shape-divider-top-1713269180 .shape-fill {
+    fill: #95a4b7;
+  }
   header {
     background-color: var(--slate500);
     position: absolute;
@@ -43,6 +72,7 @@ import Torta from "./Torta.astro";
   }
   h1 {
     color: var(--orange100);
+    letter-spacing: 2px;
     display: inline;
     font-family: "Twinton", monospace;
   }
