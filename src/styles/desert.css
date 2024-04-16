@@ -1,0 +1,332 @@
+:root {
+    --desert: #DCCFC5;
+  
+    --olive900: #211d0f;
+    --olive700: #3c3416;
+    --olive500: #766621;
+    --olive300: #998a56;
+    --olive100: #bbaf8c;
+    --olive50: #ece8dd;
+    --olivegrey: #807c73;
+   
+    --aienna900: #4d2a15;
+    --aienna700: #733c1b;
+    --aienna500: #9c4f20;
+    --aienna300: #b97954;
+    --aienna100: #d3a48a;
+    --aienna50: #ebd1c3;
+   
+    --salmon900: #674f37;
+    --salmon700: #9f7851;
+    --salmon500: #daa46d;
+    --salmon300: #e5ba90;
+    --salmon100: #efd1b4;
+    --salmon50: #f8e8d9;
+   
+   --moccasin900: #3b352d;
+   --moccasin700: #b6a385;
+   --moccasin500: #fbe1b6;
+   --moccasin300: #fde8c8;
+   --moccasin100: #fef0da;
+   --moccasin50: #fff7ed;
+   
+   --slate900: #3a434d;
+   --slate700: #566475;
+   --slate500: #7388a0;
+   --slate300: #95a4b7;
+   --slate100: #b8c2cf;
+   --slate50: #dbe0e7;
+  
+    --lilac900: #5f4e5f;
+    --lilac700: #927792;
+    --lilac500: #c8a2c8;
+    --lilac300: #d6b9d6;
+    --lilac100: ##e4d0e3;
+    --lilac50: #f1e7f1;
+  
+    --beige900: #593c38;
+    --beige700: #875853;
+    --beige500: #b8776f;
+    --beige300: #cb9891;
+    --beige100: #debab4;
+    --beige50:  #efdcd9;
+  
+    --tan900: #372d21;
+    --tan700: #a88458;
+    --tan500: #e7b476;
+    --tan300: #efc698;
+    --tan100: #f6d9b9;
+    --tan50:  #fbecdc;
+  
+    --green900: #423a2b;
+    --green700: #62563d;
+    --green500: #857451;
+    --green300: #a3957a;
+    --green100: #c1b7a4;
+    --green50:  #e0dad1;
+  
+    --blue900: #40616b;
+    --blue700: #5f95a5;
+    --blue500: #7fcce3;
+    --blue300: #a2d9ea;
+    --blue100: #c2e6f1;
+    --blue50:  #e1f2f8;
+  
+    --orange900: #6d3d11;
+    --orange700: #a75b0e;
+    --orange500: #e57a00;
+    --orange300: #f29b50;
+    --orange100: #fbbc8a;
+    --orange50:  #ffddc3;
+  
+    --purple900: #46144c;
+    --purple700: #691272;
+    --purple500: #8d039b;
+    --purple300: #ad56b4;
+    --purple100: #ca8fcd;
+    --purple50:  #e6c7e6;
+  
+    --gray700: #454E54;
+    --gray500: #888888;
+    --gray300: #EEEEEE;
+  }
+
+  /* Fonts */
+
+  @font-face {
+    font-family: 'Fira Mono';
+    src: url('/fonts/junkdog.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Josefin';
+    src: url('/fonts/JosefinSans-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'JosefinItalic';
+    src: url('/fonts/JosefinSans-Italic-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: 'Karla';
+    src: url('/fonts/KarlaSans-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'KarlaItalic';
+    src: url('/fonts/Karla-Italic-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'JunkDog';
+    src: url('/fonts/JunkDog.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Twinton';
+    src: url('/fonts/Twinton.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Milleniapolis';
+    src: url('/fonts/Milleniapolis.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html, body {
+    margin-top: 0;
+      padding: 0;
+  }
+  
+  body {
+      font-family:  'Josephin Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: left;
+      font-size: 20px;
+      line-height: 1.7;
+    color: var(--desert);
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+  }
+  
+  #desert {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      margin: 0 0 0.5rem 0;
+      line-height: 1.2;
+    font-family: "Space Grotesk", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  h1 {
+      font-size: 3.052em;
+  }
+  h2 {
+      font-size: 2.441em;
+  }
+  h3 {
+      font-size: 1.953em;
+  }
+  h4 {
+      font-size: 1.563em;
+  }
+  h5 {
+      font-size: 1.25em;
+  }
+  strong,
+  b {
+      font-weight: 700;
+  }
+  a {
+      color: var(--accent);
+  }
+  a:hover {
+      color: var(--accent);
+  }
+  p {
+      margin-bottom: 1em;
+  }
+  .prose p {
+      margin-bottom: 2em;
+  }
+  textarea {
+      width: 100%;
+      font-size: 16px;
+  }
+  input {
+      font-size: 16px;
+  }
+  table {
+      width: 100%;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+  code {
+      padding: 2px 5px;
+      background-color: rgb(var(--secondary-light));
+      border-radius: 2px;
+  }
+  pre {
+      padding: 1.5em;
+      border-radius: 8px;
+  }
+  pre > code {
+      all: unset;
+  }
+  blockquote {
+      border-left: 4px solid var(--accent); /* TODO: design code */
+      padding: 0 0 0 20px;
+      margin: 0px;
+      font-size: 1.333em;
+  }
+  hr {
+      border: none;
+      border-top: 1px solid var(--darkest); /* TODO: sound waves for hr? */
+  }
+  
+  
+  a {
+    color: hsl(293, 69%, 74%);
+    background-size: 100%;
+    text-decoration: underline;
+  }
+  
+    /* nav styles */
+  
+    .torta {
+      padding-right: 20px;
+      cursor: pointer;
+    }
+    
+    .torta .line {
+      display: block;
+      width: 40px;
+      height: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .nav-links {
+      width: 100%;
+      top: 5rem;
+      left: 48px;
+      display: none;
+      margin: 0;
+    }
+    
+    .nav-links a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a:focus {
+      background-color: var(--primary);
+      color: var(--primary-lightest);
+    }
+    
+    .expanded {
+      display: unset;
+    }
+    
+    @media screen and (min-width: 636px) {
+      .nav-links {
+        margin-left: 5em;
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+      }
+    
+      .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+      }
+    
+      .torta {
+          display: none;
+        }
+    }
