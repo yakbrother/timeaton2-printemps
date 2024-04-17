@@ -8,6 +8,13 @@
     --olive100: #bbaf8c;
     --olive50: #ece8dd;
     --olivegrey: #807c73;
+
+    --maroon900: #311004;
+    --maroon700: #451106;
+    --maroon500: #5a1107;
+    --maroon300: #864b3e;
+    --maroon100: #b08479;
+    --maroon50: #d9c0ba;
    
     --sienna900: #4d2a15;
     --sienna700: #733c1b;
@@ -193,7 +200,7 @@
   h6 {
       margin: 0 0 0.5rem 0;
       line-height: 1.2;
-    font-family: "Karla", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Milleniapolis", 'Karla', sans-serif;
   }
   h1 {
       font-size: 3.052em;
