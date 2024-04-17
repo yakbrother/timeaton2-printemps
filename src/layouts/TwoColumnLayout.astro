@@ -1,0 +1,64 @@
+---
+const { title, leadphoto, maincolor } = Astro.props;
+
+import Meta from "../components/Meta.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+import "../styles/desert.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Meta title="{title}" />
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      article {
+        display: grid;
+        width: 100%;
+      }
+      #desert {
+        flex-grow: 1;
+      }
+      #page-grid {
+        display: grid;
+        grid-template-columns: 22rem 1fr;
+      }
+
+      #page-grid img (
+        width: 100;
+      ) footer {
+        padding-top: 0;
+        margin: 0 auto;
+      }
+
+      page-title h2 {
+        font-family: "JunkDog", monospace;
+        text-align: right;
+        flex: none !important;
+        padding: 48px;
+      }
+
+      p {
+        color: var(--blue300);
+        font-family: "Josephin", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="desert">
+      <img src="/desert_2400_1.jpg" style="opacity: 0.50" />
+    </div>
+    <Header />
+    <div id="page-title"><h2>About Me</h2></div>
+    <slot />
+    <Footer />
+  </body>
+</html>
