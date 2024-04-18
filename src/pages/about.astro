@@ -5,7 +5,7 @@ import "../styles/desert.css";
 
 <TwoColumnLayout />
 
-<div style="diplay: grid">
+<div id="gridwrapper">
   <div id="sidebar">
     <p>
       <b>Full Name</b>
@@ -54,3 +54,11 @@ import "../styles/desert.css";
     </p>
   </div>
 </div>
+
+<style>
+  #gridwrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 22rem 1fr;
+  }
+</style>

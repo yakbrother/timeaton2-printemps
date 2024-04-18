@@ -167,7 +167,8 @@
   html, body {
     margin: 0;
       padding: 0;
-      color: var(--desert);
+      color: var(--maroon);
+      background-color: var(--desert);
   }
   
   body {
