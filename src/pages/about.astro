@@ -3,32 +3,31 @@ import TwoColumnLayout from "../layouts/TwoColumnLayout.astro";
 import "../styles/desert.css";
 ---
 
-<div style="height: 2em;"></div>
 <TwoColumnLayout>
   <div id="gridwrapper">
     <div id="sidebar">
       <p>
-        <b>Full Name</b>
+        <strong>Full Name</strong>
         <br />Timothy Aaron Eaton
       </p>
 
       <p>
-        <b>Citizenship</b>
+        <strong>Citizenship</strong>
         <br />USA
       </p>
 
       <p>
-        <b>Location</b>
+        <strong>Location</strong>
         <br />Paris, FR, but in the process of moving to Geneva, CH
       </p>
 
       <p>
-        <b>Status</b>
+        <strong>Status</strong>
         <br />Married to Julie Pluies, PhD
       </p>
 
       <p>
-        <b>Hobbies</b>
+        <strong>Hobbies</strong>
         <br />Creative writing, playing music, word puzzles, trekking, fishing,
         studying world history.
       </p>
@@ -104,5 +103,9 @@ import "../styles/desert.css";
       grid-gap: 20px;
       grid-template-columns: 22rem 1fr;
     }
-  </style>
+
+  .sidebar strong {
+    font-family: "Twinton", monospace;
+  }
+
 </TwoColumnLayout>

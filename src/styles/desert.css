@@ -48,7 +48,7 @@
     --lilac700: #927792;
     --lilac500: #c8a2c8;
     --lilac300: #d6b9d6;
-    --lilac100: ##e4d0e3;
+    --lilac100: #e4d0e3;
     --lilac50: #f1e7f1;
   
     --beige900: #593c38;
@@ -109,23 +109,6 @@
   }
 
   @font-face {
-    font-family: 'Josefin';
-    src: url('/fonts/JosefinSans-VariableFont_wght.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'JosefinItalic';
-    src: url('/fonts/JosefinSans-Italic-VariableFont_wght.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-  }
-
-
-  @font-face {
     font-family: 'Karla';
     src: url('/fonts/KarlaSans-VariableFont_wght.woff') format('woff');
     font-weight: normal;
@@ -156,14 +139,6 @@
     font-display: swap;
   }
 
-  @font-face {
-    font-family: 'Milleniapolis';
-    src: url('/fonts/Milleniapolis.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
   html, body {
     margin: 0;
       padding: 0;
@@ -176,7 +151,7 @@
       text-align: left;
       font-size: 20px;
       line-height: 1.7;
-    color: var(--maroon700);
+    color: var(--maroon500);
     width: 100%;
     display: flex; 
     flex-direction: column; 
@@ -239,11 +214,7 @@
       height: auto;
       border-radius: 8px;
   }
-  code {
-      padding: 2px 5px;
-      background-color: rgb(var(--secondary-light));
-      border-radius: 2px;
-  }
+
   pre {
       padding: 1.5em;
       border-radius: 8px;
@@ -252,14 +223,14 @@
       all: unset;
   }
   blockquote {
-      border-left: 4px solid var(--accent); /* TODO: design code */
+      border-left: 4px solid var(--olive500);
       padding: 0 0 0 20px;
       margin: 0px;
       font-size: 1.333em;
   }
   hr {
       border: none;
-      border-top: 1px solid var(--darkest); /* TODO: sound waves for hr? */
+      border-top: 1px solid var(--purple); /* TODO: sound waves for hr? */
   }
   
   
@@ -320,8 +291,8 @@
     
     .nav-links a:hover,
     .nav-links a:focus {
-      background-color: var(--primary);
-      color: var(--primary-lightest);
+      background-color: var(--purple300);
+      color: var(--purple100);
     }
     
     .expanded {

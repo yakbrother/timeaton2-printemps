@@ -19,53 +19,64 @@
         class="shape-fill"></path>
     </svg>
   </div>
+  <div class="trigrid">
+    <p>Copyright @2023-2024 Tim Eaton</p>
+    <p>
+      Built with <a href="https://astro.build/" target="_blank">Astro</a>.
+      <p><a href="/colophon">All photo and font credits available.</a></p>
+      <p>
+        Paris | Geneva | Philadelphia
+        <br /><a href="mailto:tim@timeaton.dev">tim@timeaton.dev</a>
+      </p>
+    </p>
 
-  <style>
-    header {
-      width: 100%;
-    }
+    <style>
+      footer {
+        width: 100%;
+        display: block;
+        padding: 24px 0px 48px;
+      }
 
-    .custom-shape-divider-bottom-1713261243 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-      transform: rotate(180deg);
-    }
+      .trigrid {
+        display: grid;
+        grid-template-rows: 33fr 33fr 33fr;
+        background: var(--maroon500;);
+      }
 
-    .custom-shape-divider-bottom-1713261243 svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 51px;
-    }
+      .custom-shape-divider-bottom-1713261243 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
 
-    .custom-shape-divider-bottom-1713261243 .shape-fill {
-      fill: #b97954;
-    }
+      .custom-shape-divider-bottom-1713261243 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 51px;
+      }
 
-    section {
-      display: flex;
-      width: 100%;
-      border-top: 0;
-      padding-bottom: 48px;
-      text-align: left;
-      background: var(--sienna300);
-    }
-    div {
-      color: var(--olive100);
-      padding: 12px;
-      border-radius: 6px;
-      box-shadow: 6px 6px 50px -35px rgba(0, 0, 0, 0.75);
-      font-family: "Josefin", sans-serif;
-      flex-basis: 0%;
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
-    p {
-      color: var(--salmon700);
-    }
-  </style>
+      .custom-shape-divider-bottom-1713261243 .shape-fill {
+        fill: var(--maroon500);
+      }
+
+      div {
+        color: var(--olive100);
+        padding: 12px;
+        border-radius: 6px;
+        box-shadow: 6px 6px 50px -35px rgba(0, 0, 0, 0.75);
+        font-family: "Poppins", sans-serif;
+        flex-basis: 0%;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      footer p {
+        color: var(--olive100);
+      }
+    </style>
+  </div>
 </footer>
