@@ -14,6 +14,9 @@ import "../styles/desert.css";
     <Meta title="About Me" />
 
     <style>
+      html {
+        height: 100%;
+      }
       body {
         display: flex;
         flex-direction: column;
@@ -26,19 +29,11 @@ import "../styles/desert.css";
 
       .desert {
         flex-grow: 1;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: auto;
-        background: var(--desert) url("/desert_2400_3.jpg");
+        background: var(--desert) url("/desert_2400_6.jpg");
         padding: 0px;
-      }
-
-      h2 {
-        font-family: "JunkDog", monospace;
-        text-align: right;
-        flex: none !important;
-        padding: 48px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: auto;
       }
 
       p {

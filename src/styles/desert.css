@@ -188,17 +188,21 @@
       font-weight: 700;
   }
   a {
-      color: var(--accent);
-  }
-  a:hover {
-      color: var(--accent);
-  }
-  p {
-      margin-bottom: 1em;
-  }
-  .prose p {
-      margin-bottom: 2em;
-  }
+    color: var(rv--lilac5000p)d;
+    padding: 0 0.25rem;
+    background-image: linear-gradient(var(--color-link-bg) 0 0);
+    background-size: 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover, a:active, a:visited {
+    color: hsl(293, 69%, 74%);
+    background-size: 100%;
+    text-decoration: underline;
+}
+
   textarea {
       width: 100%;
       font-size: 16px;
