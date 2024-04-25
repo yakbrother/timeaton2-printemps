@@ -3,89 +3,40 @@ import TwoColumnLayout from "../layouts/TwoColumnLayout.astro";
 import "../styles/desert.css";
 ---
 
-<TwoColumnLayout>
-  <div id="gridwrapper">
-    <div id="sidebar">
-      <p>
-        <strong>Design and Building</strong>
-        <br />Tim Eaton
-      </p>
+<div class="left-sidebar-grid">
+  <main class="main-content">Main content</main>
+  <section class="left-sidebar">Left sidebar</section>
+</div>
 
-      <p>
-        <strong>Editors</strong>
-        <br />Julie Pluies, Gwen, and 
-      </p>
-    </div>
-
-    <div id="content">
-      <p>
-        I started programming from an early age - my dad was a programmer for Digital -
-        and he tought me to build computers from used parts, try some visual basic,
-        and writing some scripting.
-      </p>
-
-      <div class="img-card" style="float: right; margin-left: 12px;">
-        <img src="/jungfrau-face.jpg" style="max-width: 250px;" />
-        <p>Vacation in Jungfrau...</p>
-      </div>
-
-      <p>
-        Una seco a narración lantuflos de añadiduras más no que pasaba carnero,
-        salgo de llegaba corredor complexión las más no hidalga una olla velludo
-        partes pasaba a los viernes, adarga antigua, o Quesadarme, y un
-        lantigua, se la nuestro complexión lanza ensillero acorredor conjeturas
-        los sábados, duelos de Quierentender que tenía ensillaba como tiemporta
-        que noches, duelos decir que parte, caso estro cuenta, se de velarte,
-        con su caza. Frisaba complexión lugar de noches, la nueste cuarenombre
-        de velludo.
-      </p>
-
-      <p>
-        Una seco a narración lantuflos de añadiduras más no que pasaba carnero,
-        salgo de llegaba corredor complexión las más no hidalga una olla velludo
-        partes pasaba a los viernes, adarga antigua, o Quesadarme, y un
-        lantigua, se la nuestro complexión lanza ensillero acorredor conjeturas
-        los sábados, duelos de Quierentender que tenía ensillaba como tiemporta
-        que noches, duelos decir que parte, caso estro cuenta, se de velarte,
-        con su caza. Frisaba complexión lugar de noches, la nueste cuarenombre
-        de velludo.
-      </p>
-
-      <p>
-        Una seco a narración lantuflos de añadiduras más no que pasaba carnero,
-        salgo de llegaba corredor complexión las más no hidalga una olla velludo
-        partes pasaba a los viernes, adarga antigua, o Quesadarme, y un
-        lantigua, se la nuestro complexión lanza ensillero acorredor conjeturas
-        los sábados, duelos de Quierentender que tenía ensillaba como tiemporta
-        que noches, duelos decir que parte, caso estro cuenta, se de velarte,
-        con su caza. Frisaba complexión lugar de noches, la nueste cuarenombre
-        de velludo.
-      </p>
-
-      <p>
-        Una seco a narración lantuflos de añadiduras más no que pasaba carnero,
-        salgo de llegaba corredor complexión las más no hidalga una olla velludo
-        partes pasaba a los viernes, adarga antigua, o Quesadarme, y un
-        lantigua, se la nuestro complexión lanza ensillero acorredor conjeturas
-        los sábados, duelos de Quierentender que tenía ensillaba como tiemporta
-        que noches, duelos decir que parte, caso estro cuenta, se de velarte,
-        con su caza. Frisaba complexión lugar de noches, la nueste cuarenombre
-        de velludo.
-      </p>
-    </div>
-  </div>
-
-  <style>
-    #gridwrapper {
-      width: 90%;
-      margin: auto;
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 22rem 1fr;
-    }
-
-  .sidebar strong {
-    font-family: "Twinton", monospace;
+<style>
+  /* grid container */
+  .left-sidebar-grid {
+    display: grid;
+    grid-template-areas:
+      "main-content"
+      "left-sidebar"
+      "footer";
   }
 
-</TwoColumnLayout>
+  /* general column padding */
+  .left-sidebar-grid > * {
+    padding: 1rem;
+  }
+
+  .left-sidebar-grid > .main-content {
+    grid-area: main-content;
+    background: #fff;
+  }
+  .left-sidebar-grid > .left-sidebar {
+    grid-area: left-sidebar;
+    background: #f5d55f;
+  }
+
+  /* tablet breakpoint */
+  @media (min-width: 768px) {
+    .left-sidebar-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "left-sidebar main-content main-content";
+    }
+  }
+</style>

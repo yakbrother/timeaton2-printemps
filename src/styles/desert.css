@@ -100,6 +100,10 @@
 
   /* Fonts */
 
+  * {
+    box-sizing: border-box;
+  }
+
   @font-face {
     font-family: 'Fira Mono';
     src: url('/fonts/junkdog.woff') format('woff');
@@ -142,14 +146,14 @@
   html, body {
     margin: 0;
       padding: 0;
+      font-size: calc(15px + 0.390625vw);
       color: var(--maroon);
       background-color: var(--desert);
   }
   
   body {
       font-family:  'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      text-align: left;
-      font-size: 20px;
+      text-align: left; 
       line-height: 1.7;
     color: var(--maroon500);
     width: 100%;
@@ -236,13 +240,6 @@ a:hover, a:active, a:visited {
       border: none;
       border-top: 1px solid var(--purple); /* TODO: sound waves for hr? */
   }
-  
-  
-  a {
-    color: hsl(293, 69%, 74%);
-    background-size: 100%;
-    text-decoration: underline;
-  }
 
   .img-card {
     display: inline-block;
@@ -302,8 +299,53 @@ a:hover, a:active, a:visited {
     .expanded {
       display: unset;
     }
+
+    /* grid container */
+.left-sidebar-grid {
+  grid-column: 1 / -1;
+  display:grid;
+  grid-template-areas:
+      'main-content'
+      'left-sidebar';
+}
+
+/* general column padding */
+.left-sidebar-grid > * {
+  padding:1rem;
+}
+
+/* assign columns to grid areas */
+
+.left-sidebar-grid > .main-content {
+  grid-area:main-content;
+  background:#fff;
+}
+.left-sidebar-grid > .left-sidebar {
+  grid-area:left-sidebar;
+  background:#f5d55f;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .left-sidebar-grid {
+      grid-template-columns:3, 1fr;
+      grid-template-areas:
+          'left-sidebar main-content main-content';
+  }
+}
     
     @media screen and (min-width: 636px) {
+
+      #wrapper #content {
+        width: 90%;
+        display: block;
+      }
+
+      #wrapper #sidebar {
+        width: 90%;
+        display: block;
+      }
+
       .nav-links {
         margin-left: 5em;
         display: block;
