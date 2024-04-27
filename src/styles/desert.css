@@ -290,11 +290,11 @@ a:hover, a:active, a:visited {
   .button-primary {
     background-image: linear-gradient(
       to right,
-      var(--lilac100),
-      var(--salmon100),
-      var(--tanc100),
-      var(--beige100)
-    );
+      rgba(255,237,222,1),
+      rgba(241,181,155,1),
+      rgba(219,125,106,1),
+      rgba(171,76,77,1),
+      rgba(118,63,37,1));
     box-shadow: 0 4px 15px 0 var(--lilac500);
   }
 
