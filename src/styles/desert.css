@@ -147,7 +147,7 @@
     margin: 0;
       padding: 0;
       font-size: calc(15px + 0.390625vw);
-      color: var(--maroon);
+      color: var(--maroon500);
       background-color: var(--desert);
   }
   
@@ -257,48 +257,46 @@ a:hover, a:active, a:visited {
     font-size: 75%;
     text-align: center;
   }
+
+
+  .button {
+    width: 160px;
+    color: var(--marooon700);
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: 1px solid var(--maroon700);
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
   
-    /* nav styles */
+  .button-primary:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
   
-    .torta {
-      padding-right: 20px;
-      cursor: pointer;
-    }
-    
-    .torta .line {
-      display: block;
-      width: 40px;
-      height: 5px;
-      margin-bottom: 10px;
-    }
-    
-    .nav-links {
-      width: 100%;
-      top: 5rem;
-      left: 48px;
-      display: none;
-      margin: 0;
-    }
-    
-    .nav-links a {
-      display: block;
-      text-align: center;
-      padding: 10px 0;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    
-    .nav-links a:hover,
-    .nav-links a:focus {
-      background-color: var(--purple300);
-      color: var(--purple100);
-    }
-    
-    .expanded {
-      display: unset;
-    }
+  .button-primary:focus {
+    outline: none;
+  }
+  
+  .button-primary {
+    background-image: linear-gradient(
+      to right,
+      var(--lilac100),
+      var(--salmon100),
+      var(--tanc100),
+      var(--beige100)
+    );
+    box-shadow: 0 4px 15px 0 var(--lilac500);
+  }
 
     /* grid container */
 .left-sidebar-grid {
@@ -318,11 +316,9 @@ a:hover, a:active, a:visited {
 
 .left-sidebar-grid > .main-content {
   grid-area:main-content;
-  background:#fff;
 }
 .left-sidebar-grid > .left-sidebar {
   grid-area:left-sidebar;
-  background:#f5d55f;
 }
 
 /* tablet breakpoint */
@@ -346,20 +342,5 @@ a:hover, a:active, a:visited {
         display: block;
       }
 
-      .nav-links {
-        margin-left: 5em;
-        display: block;
-        position: static;
-        width: auto;
-        background: none;
-      }
-    
-      .nav-links a {
-        display: inline-block;
-        padding: 15px 20px;
-      }
-    
-      .torta {
-          display: none;
-        }
+
     }
