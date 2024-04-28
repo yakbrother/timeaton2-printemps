@@ -1,5 +1,5 @@
 ---
-import TwoColumnLayout from "../layouts/TwoColumnLayout.astro";
+import TwoColumnLayout from "../layouts/BasicLayout.astro";
 import "../styles/desert.css";
 ---
 
@@ -19,28 +19,30 @@ import "../styles/desert.css";
         These days I’ve been more focused on teaching, consulting, and helping
         businesses grow.
       </p><p>
-        < Off the computer, I live in Paris (though I’m from the US) with my
-        wife and two cats. I love to write songs and play music with friends,
-        and I love to travel and meet different kinds of people.
+        Off the computer, I live in Paris (though I’m from the US) with my wife
+        and two cats. I love to write songs and play music with friends, and I
+        love to travel and meet different kinds of people.
         <p></p>
         If you’re interested in working with me, I’d love to hear from you! You can
         see my full resume while you're here.
       </p>
     </main>
   </section>
+  <section class="left-sidebar">
+    Left sidebar
+    <soft-skills>
+      <h2>Soft Skills</h2>
+    </soft-skills>
+
+    <hard-skills>
+      <h2>Hard Skills</h2>
+    </hard-skills>
+  </section>
+
+  <style>
+    resume-download {
+      text-align: center;
+      background: var(--beige300);
+    }
+  </style>
 </TwoColumnLayout>
-<section class="left-sidebar">Left sidebar</section>
-<soft-skills>
-  <h2>Soft Skills</h2>
-</soft-skills>
-
-<hard-skills>
-  <h2>Hard Skills</h2>
-</hard-skills>
-
-<style>
-  resume-download {
-    text-align: center;
-    background: var(--beige300);
-  }
-</style>
