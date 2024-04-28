@@ -1,39 +1,11 @@
-@ -5,24 +5,49 @@ import "../styles/desert.css";
+---
+import BasicLayout from "../layouts/BasicLayout.astro";
+import "../styles/desert.css";
+---
 
-<div class="left-sidebar-grid">
-  <main class="main-content">
-    <resume-download>
-      <a
-        href="/resume-timothy-eaton.pdf"
-        download="resume-timothy-eaton.pdf"
-        class="button button-primary"
-      >
-        Download Resume
-      </a>
-    </resume-download>
-    <p>
-      I love to organize products, branding, amd features. I love to work with
-      all kinds of people, and mediating people who don't get along.
-    </p><p>
-      I’m also a full-stack developer with 16+ years of professional experience.
-      I’m very passionate about writing and learning code, starting with old
-      PHP. My main interests has recently been in Vue, static sites, and modern
-      PHP/CSS like the Laravel system, but I’m always happy to learn something
-      new.
-    </p><p>
-      What I really love is working behind the scenes. I’ve worked extensively
-      with Github, adapating legacy code to modern standards, and finding the
-      right tools for any job. I love helping with connections between different
-      company departments to make sure all needs are met and everyone is working
-      happily and efficiently. I've worked with other commpanies, government
-      boards, and dissatisfied customers.
-    </p><p>
-      I’m currently looking a new job, preferabbly with an ethical NGO or
-      Non-profit in area of Geneva or Lausanne, where I am currently relocating.
-      I'm also quite happy with remote work in a similar time zone (+-2 hours).
-      If you’d like me on your team,
-      <a href="mailto:tim@timeaton.dev">send me an email!</a>
-
+<BasicLayout title="My Resume" photo_number="7">
+  <div class="left-sidebar-grid">
+    <main class="main-content">
       <resume-download>
         <a
           href="/resume-timothy-eaton.pdf"
@@ -43,34 +15,64 @@
           Download Resume
         </a>
       </resume-download>
-    </p>
-    <section class="left-sidebar">
-      <soft-skills>
-        <h2>Soft Skills</h2>
-        <ul>
-          <li>Lean Operations philosophy.</li>
-          <li>Critical thinking.</li>
-          <li>Attending to details.</li>
-          <li>Conflict resolution.</li>
-          <li>Background in mathematics and logic.</li>
-          <li>Experience in different world cultures.</li>
-          <li>
-            Ability to communicate equally with shareholders, CEOs, governments,
-            and clients.
-          </li>
-        </ul>
-      </soft-skills>
+      <p>
+        I love to organize products, branding, amd features. I love to work with
+        all kinds of people, and mediating people who don't get along.
+      </p><p>
+        I’m also a full-stack developer with 16+ years of professional
+        experience. I’m very passionate about writing and learning code,
+        starting with old PHP. My main interests has recently been in Vue,
+        static sites, and modern PHP/CSS like the Laravel system, but I’m always
+        happy to learn something new.
+      </p><p>
+        What I really love is working behind the scenes. I’ve worked extensively
+        with Github, adapating legacy code to modern standards, and finding the
+        right tools for any job. I love helping with connections between
+        different company departments to make sure all needs are met and
+        everyone is working happily and efficiently. I've worked with other
+        commpanies, government boards, and dissatisfied customers.
+      </p><p>
+        I’m currently looking a new job, preferabbly with an ethical NGO or
+        Non-profit in area of Geneva or Lausanne, where I am currently
+        relocating. I'm also quite happy with remote work in a similar time zone
+        (+-2 hours). If you’d like me on your team,
+        <a href="mailto:tim@timeaton.dev">send me an email!</a>
 
-      <hard-skills>
-        <h2>Hard Skills</h2>
-      </hard-skills>
+        <resume-download>
+          <a
+            href="/resume-timothy-eaton.pdf"
+            download="resume-timothy-eaton.pdf"
+            class="button button-primary"
+          >
+            Download Resume
+          </a>
+        </resume-download>
+      </p>
+      <section class="left-sidebar">
+        <soft-skills>
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Lean Operations philosophy.</li>
+            <li>Critical thinking.</li>
+            <li>Attending to details.</li>
+            <li>Conflict resolution.</li>
+            <li>Background in mathematics and logic.</li>
+            <li>Experience in different world cultures.</li>
+            <li>
+              Ability to communicate equally with shareholders, CEOs,
+              governments, and clients.
+            </li>
+          </ul>
+        </soft-skills>
 
-      <style>
-        resume-download {
-          text-align: center;
-          background: var(--beige300);
-        }
-      </style>
-    </section>
-  </main>
-</div>
+        <style>
+          resume-download {
+            text-align: center;
+            background: var(--beige300);
+            padding: 24px;
+          }
+        </style>
+      </section>
+    </main>
+  </div>
+</BasicLayout>

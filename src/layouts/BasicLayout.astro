@@ -1,5 +1,5 @@
 ---
-const { title, leadphoto, maincolor } = Astro.props;
+const { title, photo_number } = Astro.props;
 
 import Meta from "../components/Meta.astro";
 import Footer from "../components/Footer.astro";
@@ -11,7 +11,7 @@ import "../styles/desert.css";
 <!doctype html>
 <html lang="en">
   <head>
-    <Meta title="About Me" />
+    <Meta title="{title}" />
 
     <style>
       html {
@@ -29,7 +29,7 @@ import "../styles/desert.css";
 
       .desert {
         flex-grow: 1;
-        background: var(--desert) url("/desert_2400_6.jpg");
+        background: var(--desert) url("/desert_2400_{photonumber}.jpg");
         padding: 0px;
         background-repeat: no-repeat;
         background-position: center top;
