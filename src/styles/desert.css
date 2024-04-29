@@ -258,30 +258,49 @@ a:hover, a:active, a:visited {
     text-align: center;
   }
 
+  article blockquote, .contact-me {
+    display: block;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid var(--maroon100);
+    box-shadow: 2px 2px var(--maroon100), 3px 3px var(--desert);
+  }
 
-  .button {
-    width: 160px;
-    color: var(--marooon700);
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align:center;
-    border: 1px solid var(--maroon700);
-    background-size: 300% 100%;
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  .light-box {
+    display: block;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid var(--slate100);
+    box-shadow: 2px 2px var(--slate100), 3px 3px var(--desert);
   }
+
+  .button-primary {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #1ED760;
+  height: 48px;
+  }
+  button-primary:hover{
+    transform: scale(1.04);
+    background-color: #21e065;
+  }
+
   
-  .button-primary:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  }
   
   .button-primary:focus {
     outline: none;

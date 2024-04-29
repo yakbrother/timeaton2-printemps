@@ -1,5 +1,5 @@
 ---
-const { title, photo_number } = Astro.props;
+const { title = "", description = "", photo_number = 6 } = Astro.props;
 
 import Meta from "../components/Meta.astro";
 import Footer from "../components/Footer.astro";
@@ -11,7 +11,7 @@ import "../styles/desert.css";
 <!doctype html>
 <html lang="en">
   <head>
-    <Meta title="{title}" />
+    <Meta title="{title}" , description="description" />
 
     <style>
       html {
@@ -29,7 +29,7 @@ import "../styles/desert.css";
 
       .desert {
         flex-grow: 1;
-        background: var(--desert) url("/desert_2400_{photonumber}.jpg");
+        background: var(--desert) url("/desert_2400_{photo_number}.jpg");
         padding: 0px;
         background-repeat: no-repeat;
         background-position: center top;
@@ -38,14 +38,14 @@ import "../styles/desert.css";
 
       p {
         color: var(--maroon700);
-        font-family: "Poppin", sans-serif;
+        font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
 
   <body>
     <div class="desert">
-      <Header />
+      <Header title={title} photo_number={photo_number} />
       <slot />
       <Footer />
     </div>
