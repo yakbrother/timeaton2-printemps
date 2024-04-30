@@ -1,12 +1,16 @@
 ---
+const title = "My Resume";
+const photo_number = "8";
+
 import BasicLayout from "../layouts/BasicLayout.astro";
 import "../styles/desert.css";
 ---
 
-<BasicLayout title="My Resume" photo_number="7">
+<BasicLayout title="My Resume" photo_number="9">
   <div class="left-sidebar-grid">
     <main class="main-content">
-      <resume-download>
+      <div id="page-title"><h2>{title}</h2></div>
+      <div class="light-box">
         <a
           href="/resume-timothy-eaton.pdf"
           download="resume-timothy-eaton.pdf"
@@ -14,7 +18,7 @@ import "../styles/desert.css";
         >
           Download Resume
         </a>
-      </resume-download>
+      </div>
       <p>
         I love to organize products, branding, amd features. I love to work with
         all kinds of people, and mediating people who don't get along.
@@ -38,7 +42,7 @@ import "../styles/desert.css";
         (+-2 hours). If you’d like me on your team,
         <a href="mailto:tim@timeaton.dev">send me an email!</a>
       </p>
-      <resume-download>
+      <div class="light-box">
         <a
           href="/resume-timothy-eaton.pdf"
           download="resume-timothy-eaton.pdf"
@@ -46,34 +50,25 @@ import "../styles/desert.css";
         >
           Download Resume
         </a>
-      </resume-download>
+      </div>
     </main>
     <section class="left-sidebar">
       <soft-skills>
-        <h2>Soft Skills</h2>
+        <h3>Soft Skills</h3>
         <ul>
           <li>Lean Operations philosophy.</li>
           <li>Critical thinking.</li>
           <li>Attending to details.</li>
           <li>Conflict resolution.</li>
+          <li>Hiring and Firing.</li>
           <li>Background in mathematics and logic.</li>
-          <li>Experience in different world cultures.</li>
+          <li>Experience in different world cultures and their economies.</li>
           <li>
             Ability to communicate equally with shareholders, CEOs, governments,
             and clients.
           </li>
         </ul>
       </soft-skills>
-
-      <style>
-        resume-download {
-          text-align: center;
-          display: block;
-          padding: 12px;
-          background: var(--beige300);
-          padding: 24px;
-        }
-      </style>
     </section>
   </div>
 </BasicLayout>

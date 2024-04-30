@@ -1,19 +1,21 @@
 ---
-const { title = "", description = "", photo_number = 6 } = Astro.props;
+const { title, description, photo_number } = Astro.props;
 
 import Meta from "../components/Meta.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
 import "../styles/desert.css";
+
+const background_image = "/desert_2400_" + { photo_number } + ".jpg";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <Meta title="{title}" , description="description" />
+    <Meta title={title} , description={description} />
 
-    <style>
+    <style define:vars={background_image} )>
       html {
         height: 100%;
       }
@@ -29,7 +31,7 @@ import "../styles/desert.css";
 
       .desert {
         flex-grow: 1;
-        background: var(--desert) url("/desert_2400_{photo_number}.jpg");
+        background: var(--desert) url(var(--background_image));
         padding: 0px;
         background-repeat: no-repeat;
         background-position: center top;
@@ -45,7 +47,7 @@ import "../styles/desert.css";
 
   <body>
     <div class="desert">
-      <Header title={title} photo_number={photo_number} />
+      <Header title={title} />
       <slot />
       <Footer />
     </div>
