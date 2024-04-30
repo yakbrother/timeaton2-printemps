@@ -7,44 +7,42 @@ import Header from "../components/Header.astro";
 
 import "../styles/desert.css";
 
-const background_image = "/desert_2400_" + { photo_number } + ".jpg";
+var backgroundImage = JSON.stringify(`/desert_2400_${photo_number}.jpg`);
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <Meta title={title} , description={description} />
+  <head> </head>
+  <Meta title={title} , description={description} />
 
-    <style define:vars={background_image} )>
-      html {
-        height: 100%;
-      }
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      article {
-        display: grid;
-        width: 100%;
-      }
+  <style define:vars={{ backgroundImage }}>
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    article {
+      display: grid;
+      width: 100%;
+    }
 
-      .desert {
-        flex-grow: 1;
-        background: var(--desert) url(var(--background_image));
-        padding: 0px;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: auto;
-      }
+    .desert {
+      flex-grow: 1;
+      background: var(--desert), url(var(--background_image));
+      padding: 0px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: auto;
+    }
 
-      p {
-        color: var(--maroon700);
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
-  </head>
-
+    p {
+      color: var(--maroon700);
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
   <body>
     <div class="desert">
       <Header title={title} />
@@ -52,4 +50,6 @@ const background_image = "/desert_2400_" + { photo_number } + ".jpg";
       <Footer />
     </div>
   </body>
+
+
 </html>
