@@ -138,7 +138,7 @@
 
   @font-face {
     font-family: 'Poppins';
-    src: url('/fonts/Twinton.woff') format('woff');
+    src: url('Poppins-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -193,13 +193,19 @@
   b {
       font-weight: 700;
   }
-  h2, h3 {
-    color: var(--maroon400);
+  h2, h3, h4 {
+    color: var(--maroon300);
   }
+  h3, wws∂wcccdvsssfbfh4 {
+    color: var(--maroon100);
+  }
+  
+  
+
   a {
-    color: var(--lilac500);
+    color: var(--blue700);
     padding: 0 0.25rem;
-    background-image: linear-gradient(var(--color-link-bg) 0 0);
+    background-image: linear-gradient(var(--maroon300) 0 0);
     background-size: 0;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -207,7 +213,7 @@
 }
 
 a:hover, a:active, a:visited {
-    color: hsl(293, 69%, 74%);
+    color: var(--desert);
     background-size: 100%;
     text-decoration: underline;
 }
