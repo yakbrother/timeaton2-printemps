@@ -1,0 +1,84 @@
+---
+const title = "Tools I Use";
+
+import BasicLayout from "../layouts/BasicLayout.astro";
+import "../styles/desert.css";
+---
+
+<BasicLayout title="Tools I Use" slug="uses">
+  <style is:global>
+    .desert {
+      background: url("/desert_2400_3.jpg");
+    }
+  </style>
+  <div class="left-sidebar-grid">
+    <main class="main-content">
+      <div id="page-title"><h2>{title}</h2></div>
+      <h3 id="hardware">Hardware</h3>
+      <ul>
+        <li>Laptop: Macbook Air (13.6-inch, 2022, Apple M2 Chip, 24GB RAM)</li>
+        <li>Various monitors if I need a larger screen</li>
+        <li>
+          Keyboard: <a href="https://www.dygma.com/raise/">Dygma Raise</a>
+        </li>
+        <li>Mouse: Logitech Wireless Mouse M320</li>
+        <li>Wireless headphones: AirPods Pro, Sony WH-1000XM4</li>
+      </ul>
+      <h3 id="editor">Editor</h3>
+      <ul>
+        <li><strong>VS Code</strong> most of the time</li>
+        <li>I use Noctis Lilac theme write now, but that changes often/</li>
+        <li>Sublime Text and Vim for random edits</li>
+      </ul>
+      <h3 id="software">Software</h3>
+      <ul>
+        <li><a href="https://1password.com/">1Password</a></li>
+        <li><a href="https://desktop.github.com/">Github</a></li>
+        <li>
+          <a href="https://www.raycast.com/">Raycast</a> - used with some extensions
+          for VS Code and terminal
+        </li>
+        <li><a href="https://panic.com/transmit/">Transmit</a></li>
+        <li><a href="https://tableplus.com/">TablePlus</a></li>
+        <li>
+          <a href="https://www.warp.dev/">Warp</a> - a fast terminal emulator I use
+          with oh-my-zsh.
+        </li>
+        <li>
+          <a href="https://www.pixelmator.com/pro/">Pixelmator Pro</a> - simple but
+          powerful image editing
+        </li>
+        <li>
+          <a href="https://trello.com/">Trello</a> - I use <a
+            href="https://linear.app/">Linear</a
+          > for large projects, but Trello is perfect for personal notes. <a
+            href="https://www.craft.do/">Craft</a
+          > is also looking nice to me for notes but I haven't switched.
+        </li>
+        <li>
+          <a href="https://flexibits.com/fantastical">Fantastical</a> - my favorite
+          calender app.
+        </li>
+        <li>
+          <a href="https://sparkmailapp.com/">Spark</a> - good for organizing incoming
+          email
+        </li>
+        <li>
+          <a href="https://ulysses.app/">Ulysses</a> - for writing blog posts
+        </li>
+        <li>Various mind-mapping tools for ideas.</li>
+      </ul>
+    </main>
+    <section class="left-sidebar">
+      <h4>Away from Work</h4>
+      <p>
+        To keep myself balanced, I try to stay away from my laptop after work
+        hours or on weekends, especially while I am traveling. I take an Ipad
+        (2022 10.2in) during these times, so I can still read the news or play
+        games. I take a Logitech K380 bluetooth keyboard for when writing
+        inspiration hits; it's a lot easier than the keyboard on the screen and
+        the keys feel nice and solid.
+      </p>
+    </section>
+  </div>
+</BasicLayout>

@@ -1,13 +1,11 @@
 ---
-const { title, description, photo_number } = Astro.props;
+const { title, description, slug } = Astro.props;
 
 import Meta from "../components/Meta.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
 import "../styles/desert.css";
-
-var backgroundImage = JSON.stringify(`/desert_2400_${photo_number}.jpg`);
 ---
 
 <!doctype html>
@@ -15,7 +13,7 @@ var backgroundImage = JSON.stringify(`/desert_2400_${photo_number}.jpg`);
   <head> </head>
   <Meta title={title} , description={description} />
 
-  <style define:vars={{ backgroundImage }}>
+  <style>
     html {
       height: 100%;
     }
@@ -27,15 +25,6 @@ var backgroundImage = JSON.stringify(`/desert_2400_${photo_number}.jpg`);
     article {
       display: grid;
       width: 100%;
-    }
-
-    .desert {
-      flex-grow: 1;
-      background: var(--desert), url(var(--background_image));
-      padding: 0px;
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: auto;
     }
 
     p {

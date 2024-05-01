@@ -136,6 +136,14 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Twinton.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   html, body {
     margin: 0;
       padding: 0;
@@ -185,8 +193,11 @@
   b {
       font-weight: 700;
   }
+  h2, h3 {
+    color: var(--maroon400);
+  }
   a {
-    color: var(rv--lilac5000p)d;
+    color: var(--lilac500);
     padding: 0 0.25rem;
     background-image: linear-gradient(var(--color-link-bg) 0 0);
     background-size: 0;
@@ -350,7 +361,14 @@ button-dark {
       background-color: #616467;
   }
 
-  
+  .desert {
+    flex-grow: 1;
+    background-color: var(--desert);
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+  }
 
     /* grid container */
 .left-sidebar-grid {

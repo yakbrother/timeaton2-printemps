@@ -1,12 +1,16 @@
 ---
 const title = "My Resume";
-const photo_number = "8";
 
 import BasicLayout from "../layouts/BasicLayout.astro";
 import "../styles/desert.css";
 ---
 
-<BasicLayout title="My Resume" photo_number="9">
+<BasicLayout title="My Resume" slug="resume">
+  <style is:global>
+    .desert {
+      background: url("/desert_2400_4.jpg");
+    }
+  </style>
   <div class="left-sidebar-grid">
     <main class="main-content">
       <div id="page-title"><h2>{title}</h2></div>

@@ -3,10 +3,28 @@ import BasicLayout from "../layouts/BasicLayout.astro";
 import "../styles/desert.css";
 ---
 
-<BasicLayout title="Credits" photo_number="8">
-  <div class="left-sidebar-grid">
-    <main class="main-content">
-      <section class="left-sidebar">Left sidebar</section>
-    </main>
-  </div>
-</BasicLayout>
+<BasicLayout title="Credits" slug="credits" />
+<style is:global>
+  .desert {
+    background: url("/desert_2400_6.jpg");
+  }
+</style>
+
+<section class="left-sidebar-grid">
+  <main class="main-content">
+    <div id="page-title"><h2>About Me</h2></div>
+    <p>
+      I'm a Fullstack Developer with a strength in PHP and other backend tools.
+      I've been programming all sorts of code since I was very young with my
+      first Commodore 64, and that has translated into loving Laravel code and
+      learning all kinds of new technology.
+    </p>
+  </main>
+  <section class="left-sidebar">
+    <h3>Photos</h3>
+    <p>
+      All the desert photos are royalty-free from
+      <a href-"https unsplash.com " target="_blank">Unsplash</a>. Credits go to
+    </p>
+  </section>
+</section>

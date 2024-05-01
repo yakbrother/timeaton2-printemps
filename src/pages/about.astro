@@ -3,7 +3,12 @@ import BasicLayout from "../layouts/BasicLayout.astro";
 import "../styles/desert.css";
 ---
 
-<BasicLayout title="About Me" photo_number="6">
+<BasicLayout title="About Me" slug="about">
+  <style is:global>
+    .desert {
+      background: url("/desert_2400_6.jpg");
+    }
+  </style>
   <section class="left-sidebar-grid">
     <main class="main-content">
       <div id="page-title"><h2>About Me</h2></div>
