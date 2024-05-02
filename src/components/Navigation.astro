@@ -1,9 +1,8 @@
-<div class="torta" onclick="toggleMenu()">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-<ul id="navigation">
+<input class="menu-buttontn" type="checkbox" id="menu-button" />
+<label class="menu-icon" for="menu-button">
+  <span class="torta-icon"> </span>
+</label>
+<ul id="menu">
   <li><a href="/">Home</a></li>
   <li><a href="/about">About</a></li>
   <li><a href="uses">Uses</a></li>
@@ -11,98 +10,131 @@
   <li><a href="/blog">Blog</a></li>
 </ul>
 
-
-<script>
-    function toggleMenu() {
-    var torta = document.querySelector('.torta');
-    torta.classList.toggle('active');
-  }
-</script>
-
 <style>
-    nav {
-    color: snow;
-    display: flex;
-    justify-content: space-between;
-  }
-  nav ul {
-    /* Make the markers disappear */
-    list-style-type: none;
-  }
-  nav ul li {
-    /* Puts the elements in a single line */
-    display: inline-flex;
-    margin: 0.3em 1em;
+  a {
+    color: var(--desert);
   }
 
-  input[type="checkbox"]:not(:checked) + ul {
-    display: none;
+  /* header */
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
   }
 
-  nav input[type="checkbox"],
-  nav label {
-    display: none;
-  }
-
-  @media (max-width: 576px) {
-    nav label {
-      text-align: right;
-      display: block;
-      padding: 0.5em;
-      line-height: 1.6em;
-      align-self: center;
-    }
-    nav {
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    /* Because we are in mobile mode, we want to display it as a
-       vertical list */
-    nav ul {
-      display: block;
-    }
-    /* We have two lists: the first one are the always visibile items
-       in the menu bar. The second one is the one that will be hidden */
-    nav ul li {
-      margin-bottom: 0;
-      width: 100%;
-      text-align: right;
-      padding: 0.5em;
-    }
-
-.torta span {
-  display: block;
-  width: 35px;
-  height: 3px;
-  margin: 6px auto;
-  background-color: #333;
-  transition: all 0.3s ease-in-out;
-}
-
-.torta.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.torta.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.torta.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-@media (max-width: 768px) {
-  .torta {
+  li a {
     display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
   }
-}
 
-@media (min-width: 769px) {
-  .torta {
+  li a:hover,
+  .menu-button:hover {
+    background-color: #f4f4f4;
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  /* menu */
+
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* menu icon */
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .menu-icon .torta-icon {
+    background: var(--desert);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .menu-icon .torta-icon:before,
+  .menu-icon .torta-icon:after {
+    background: var(--desert);
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .menu-icon .torta-icon:before {
+    top: 5px;
+  }
+
+  .menu-icon .torta-icon:after {
+    top: -5px;
+  }
+
+  /* menu btn */
+
+  .menu-button {
     display: none;
   }
-}
 
+  .menu-button:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .menu-button:checked ~ .menu-icon .torta-icon {
+    background: transparent;
+  }
+
+  .menu-button:checked ~ .menu-icon .torta-icon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-button:checked ~ .menu-icon .torta-icon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-button:checked ~ .menu-icon:not(.steps) .torta-icon:before,
+  .menu-button:checked ~ .menu-icon:not(.steps) .torta-icon:after {
+    top: 0;
+  }
+
+  /* 48em = 768px */
+
+  @media (min-width: 48em) {
+    li {
+      float: left;
+    }
+    li a {
+      padding: 20px 30px;
+    }
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
 </style>

@@ -1,5 +1,5 @@
 ---
-
+const { title, slug } = Astro.props;
 ---
 
 <header>
@@ -8,6 +8,7 @@
       <h1>TiMOTHY EATON</h1>
       <p>OPERATIONS MANAGEMENT | FULL STACK</p>
     </logo-box>
+    <Navigation slug={slug} />
   </section>
 </header>
 <svg-top-divider class="custom-shape-divider-top-1713269180">
@@ -56,12 +57,19 @@
     color: var(--mocassin700);
   }
 
-  section {
+  1232section {
     width: 90%;
     justify-content: center;
     align-items: bottom;
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  logo-box {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
   }
 
   div {
