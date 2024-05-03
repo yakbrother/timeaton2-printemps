@@ -1,12 +1,12 @@
 ---
-title: Learning Go (golang): First Update
+title: Learning Go (golang) - First Update
 date: 2023-04-29
 description: |
-    A new path with video tutorials
+  A new path with video tutorials
 tags:
-    - Go
-    - Code
-    - Learning
+  - Go
+  - Code
+  - Learning
 ---
 
 One of the problems I discovered since [my last post](/posts/learning-go-from-a-hospital-bed/) is this: as a life-long programmer, it can be a little tough to learn a new language from scratch. After going through a few video tutorials on YouTube, Udemy, and ZTM, I leaned the basic types, syntax, and theory, but then I quickly tired of the projects. I actually wanted to argue about their structure, the same that I would do if I were planning a new feature at work. Some tutorials just annoyed me.
