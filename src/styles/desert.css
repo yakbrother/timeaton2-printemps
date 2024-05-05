@@ -138,7 +138,7 @@
 
   @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Regular.woff') format('woff');
+    src: url('/fonts/Poppins-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -247,24 +247,18 @@ a:hover, a:active, a:visited {
       margin: 0px;
       font-size: 1.333em;
   }
-  hr {
+/*   hr {
       border: none;
-      border-top: 1px solid var(--purple); /* TODO: sound waves for hr? */
-  }
+      border-top: 1px solid var(--purple); /* TODO: sound waves for hr? 
+  } */
 
-/*   hr{
+  hr {
     margin: 40px;
     border: none;
     height: 4px;  
-  } */
-
-  decoration {
-    margin: 0px;
-    padding: 0px;
-    height: 4px;
   }
 
-  decoration.rainbow {
+  hr.rainbow {
     background-image: linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
     background-image: -webkit-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
     background-image: -moz-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 45%, #ccc 55%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5)); 
@@ -273,7 +267,7 @@ a:hover, a:active, a:visited {
   } 
   
   
-  decoration.rainbow2 {
+  hr.rainbow2 {
       background: #ff0000;
       background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff0000), color-stop(25%,#ffff00), color-stop(50%,#00ff00), color-stop(75%,#00ffff), color-stop(100%,#0000ff));
       background: -webkit-linear-gradient(-45deg, #ff0000 0%,#ffff00 25%,#00ff00 50%,#00ffff 75%,#0000ff 100%);
@@ -437,6 +431,7 @@ button-dark {
       grid-template-areas:
           'left-sidebar main-content main-content';
   }
+
 }
     
     @media screen and (min-width: 636px) {

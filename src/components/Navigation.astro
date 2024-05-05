@@ -1,14 +1,15 @@
-<input class="menu-button" type="checkbox" id="menu-button" />
-<label class="menu-icon" for="menu-button">
-  <span class="torta-icon"> </span>
-</label>
-<ul id="menu">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="uses">Uses</a></li>
-  <li><a href="/resume">Resume</a></li>
-  <li><a href="/blog">Blog</a></li>
-</ul>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<label for="menu-toggle">&#9776;</label>
+<section class="menu-wrapper">
+  <ul id="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/resume">Resume</a></li>
+    <li><a href="uses">Uses</a></li>
+    <li><a href="/credits">Credits</a></li>
+  </ul>
+</section>
 
 <style>
   a {
@@ -22,26 +23,24 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
   }
 
   li a {
     display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    padding: 5px 15px;
     text-decoration: none;
   }
 
   li a:hover,
   .menu-button:hover {
-    background-color: #f4f4f4;
+    color: var(--lilac300);
   }
 
   .logo {
     display: block;
     float: left;
     font-size: 2em;
-    padding: 10px 20px;
+    padding: 10px 20px 0px 20px;
     text-decoration: none;
   }
 
@@ -50,7 +49,7 @@
   .menu {
     clear: both;
     max-height: 0;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
   }
 
   /* menu icon */
@@ -59,37 +58,9 @@
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 5px 15px;
     position: relative;
     user-select: none;
-  }
-
-  .menu-icon .torta-icon {
-    background: var(--desert);
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background 0.2s ease-out;
-    width: 18px;
-  }
-
-  .menu-icon .torta-icon:before,
-  .menu-icon .torta-icon:after {
-    background: var(--desert);
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    width: 100%;
-  }
-
-  .menu-icon .torta-icon:before {
-    top: 5px;
-  }
-
-  .menu-icon .torta-icon:after {
-    top: -5px;
   }
 
   /* menu btn */
@@ -103,7 +74,7 @@
   }
 
   .menu-button:checked ~ .menu-icon .torta-icon {
-    background: transparent;
+    background: var(--desert);
   }
 
   .menu-button:checked ~ .menu-icon .torta-icon:before {
@@ -121,12 +92,12 @@
 
   /* 48em = 768px */
 
-  @media (min-width: 48em) {
+  @media (min-width: 850px) {
     li {
       float: left;
     }
     li a {
-      padding: 20px 30px;
+      padding: 10px 20px;
     }
     .menu {
       clear: none;
