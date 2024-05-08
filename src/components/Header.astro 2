@@ -1,0 +1,133 @@
+---
+const { title, slug } = Astro.props;
+---
+
+<header>
+  <section class="navbar">
+    <logo-box>
+      <h1>TiMOTHY EATON</h1>
+      <p>OPERATIONS MANAGEMENT | FULL STACK</p>
+    </logo-box>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label class="menu-toggle-link" for="menu-toggle">&#9776;</label>
+    <ul class="menu">
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="uses">Uses</a></li>
+    </ul>
+  </section>
+  <svg-top-divider class="custom-shape-divider-top-1713269180">
+    <svg
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+  </svg-top-divider>
+
+  <style>
+    .custom-shape-divider-top-1713269180 {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .custom-shape-divider-top-1713269180 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 51px;
+    }
+
+    .custom-shape-divider-top-1713269180 .shape-fill {
+      fill: var(--slate500);
+    }
+
+    header {
+      background-color: var(--slate500);
+      color: var(--moccasin300);
+      flex: none !important;
+      width: 100%;
+      height: 120px;
+      display: block;
+    }
+
+    header p {
+      padding: 0;
+      margin-top: -5px;
+      color: var(--mocassin700);
+    }
+
+    logo-box {
+      display: block;
+      float: left;
+      padding: 10px 20px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    section.navbar {
+      background: var(--slate500);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h1 {
+      color: var(--tan100);
+      margin-bottom: 0px;
+      margin-top: 12px;
+      padding-bottom: 0px;
+      letter-spacing: 3px;
+      display: inline-block;
+      font-family: "Twinton", monospace;
+    }
+
+    .menu-toggle,
+    .menu-toggle-link {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      margin-right: 20px;
+    }
+    .menu li a {
+      color: var(--desert);
+      text-decoration: none;
+    }
+    /* Responsive styles */
+    @media screen and (max-width: 858px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: var(--slate900);
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1;
+      }
+      .menu li {
+        margin: 10px 0;
+      }
+      .menu-toggle-link {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        text-size: 200%;
+        cursor: pointer;
+        z-index: 2;
+      }
+    }
+  </style>
+</header>
