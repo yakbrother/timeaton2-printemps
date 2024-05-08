@@ -3,6 +3,12 @@ const { title, slug } = Astro.props;
 ---
 
 <header>
+
+  <logo-box>
+    <h1>TiMOTHY EATON</h1>
+    <p>OPERATIONS MANAGEMENT | FULL STACK</p>
+  </logo-box>
+
   <navigation>
     <ul class="menu">
       <li><a href="/blog">Blog</a></li>
@@ -11,48 +17,15 @@ const { title, slug } = Astro.props;
       <li><a href="/uses">Uses</a></li>
     </ul>
   </navigation>
-
-  <logo-box>
-    <h1>TiMOTHY EATON</h1>
-    <p>OPERATIONS MANAGEMENT | FULL STACK</p>
-  </logo-box>
-
-  <svg-fixer-box>
-  <svg-top-divider class="custom-shape-divider-top-1713269180">
-    <svg
-      data-name="Layer 1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1200 120"
-      preserveAspectRatio="none"
-    >
-      <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
-    </svg>
-  </svg-top-divider>
-</svg-fixer-box>
+  
 </header>
+<header-fade>
+  <hr class="rainbow" style="margin-top:2px; margin-bottom: 5px; margin-left: 0; width: 100%;" />
+  <hr class="rainbow" style="margin-top:2px; margin-bottom: 5px; margin-left: 0; height: 3px; width: 100%;" />
+  <hr class="rainbow" style="margin-top:2px; margin-bottom: 5px; margin-left: 0; height: 1 px; width: 100%;" />
+</header-fade>
 <style>
-  svg-fixer-box {
-    position: relative;
-  }
-  .custom-shape-divider-top-1713269180 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    clear: both;
-    border-top:0px;
-    margin-top: 0px;
-  }
 
-  .custom-shape-divider-top-1713269180 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 51px;
-  }
-
-  .custom-shape-divider-top-1713269180 .shape-fill {
-    fill: var(--slate500);
-  }
 
   header {
     background-color: var(--slate500);
@@ -95,6 +68,7 @@ const { title, slug } = Astro.props;
     display: block;
     justify-content: space-between;
     margin: 0;
+    margin-top: 25px;
     
   }
 
@@ -120,4 +94,26 @@ const { title, slug } = Astro.props;
     background-color: (--lilac900)
     padding: 3px 10px;
   }
+
+  bottom-gradient {
+    clear: all;
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0% 10%,
+      var(--slate500) 10% 20%,
+      transparent 20% 35%,
+      var(--slate500) 35% 50%,
+      transparent 50% 55%
+    );
+
+    header-fade {
+      width: 100px;
+      color: var(--slate500);
+      border-top: 8px;
+      padding-top: 5px;
+      border-buttom: 1 px solid var(--slate500);
+      padding-bottom: 3px;
+    }
 </style>

@@ -5,7 +5,7 @@ description: How I decided to start learning Go and setting up a plan for the fi
 draft: false
 ---
 
-I’ve always been fascinated by Go - mostly because I watched people work on it in co-working spaces and they always seemed to have fun with their jobs.  But never learned it or used it in my work. I figured - I’m stuck in a hospital bed. Why not go for it now?
+I’ve always been fascinated by Go - mostly because I watched people work on it in co-working spaces and they always seemed to have fun with their jobs. But never learned it or used it in my work. I figured - I’m stuck in a hospital bed. Why not go for it now?
 
 First took a quick look at jobs in my area that wanted Go programmers, and there no lack of listings. It seems like many companies use it some way I took a day to read a few other people’s accounts of how they got into program, and came up with a synthesised plan of I would go about it.
 
