@@ -1,5 +1,5 @@
 ---
-import BackToTop from "./BackToTop.astro"
+import WeirdStripes from "./WeirdStripes.astro"
 ---
 
 
@@ -19,8 +19,12 @@ import BackToTop from "./BackToTop.astro"
       | <a href="/credits">Credits</a>
       </p>
       <hr />
+      <p> </p>
+      <hr />
   </div>
 </footer>
+
+<WeirdStripes />
 
 <style>
 
@@ -51,6 +55,7 @@ import BackToTop from "./BackToTop.astro"
     text-align; center;
     padding: 12px 0px;
     margin: 0;
+    min-height: 150px;
 }
 
   footer .copy {
@@ -61,6 +66,10 @@ import BackToTop from "./BackToTop.astro"
     text-transform: capitalize;
     padding: 0px;
     color:(--salmon300);
+    }
+
+    footer a, footer a:visited {
+      color: var(--desert);
     }
   </style>
 

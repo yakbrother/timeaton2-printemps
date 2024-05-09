@@ -1,5 +1,6 @@
 ---
 const { title, slug } = Astro.props;
+import WeirdStripes from "./WeirdStripes.astro";
 ---
 
 <header>
@@ -7,10 +8,10 @@ const { title, slug } = Astro.props;
   <logo-box>
     <h1>TiMOTHY EATON</h1>
     <p>OPERATIONS MANAGEMENT | FULL STACK</p>
-  </logo-box>
-
+  </logo-box> 
   <navigation>
     <ul class="menu">
+      <li><a href="/">Home</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/resume">Resume</a></li>
@@ -19,16 +20,13 @@ const { title, slug } = Astro.props;
   </navigation>
   
 </header>
-<header-fade>
-  <hr class="rainbow" style="margin-top:2px; margin-bottom: 5px; margin-left: 0; width: 100%;" />
-  <hr class="rainbow" style="margin-top:2px; margin-bottom: 5px; margin-left: 0; height: 3px; width: 100%;" />
-  <hr class="rainbow" style="margin-top:2px; margin-bottom: 5px; margin-left: 0; height: 1 px; width: 100%;" />
-</header-fade>
+<WeirdStripes />
 <style>
 
 
   header {
     background-color: var(--slate500);
+    background-image: radial-gradient(at bottom left, var(--slate500) 50%,  var(--slate100) 95%);
     color: var(--moccasin300);
     flex: none !important;
     width: 100%;
@@ -75,24 +73,31 @@ const { title, slug } = Astro.props;
   navigation ul {
     display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 4px;
+    margin: 4px;
+    padding: 0 0 4px 0;
     justify-content: space-between;
   }
   .menu li {
     margin-right: 20px;
   }
+
+  .menu li a {
+    text-size: 120%;
+    font-weight: bold;
+    width: 100%;
+    padding: 3px 20px;
+    color: var(--desert);
+  }
   .menu li a:active,
   .menu li a:visited {
     color: var(--desert);
     text-decoration: none;
-    width: 100%;
-    padding: 10px 0;
+    background-color: var(--slate300);
   }
   .menu li a:hover {
     color: var(--desert);
-    background-color: (--lilac900)
-    padding: 3px 10px;
+    background-color: var(--slate300);
+    text-decoration: none;
   }
 
   bottom-gradient {
@@ -116,4 +121,5 @@ const { title, slug } = Astro.props;
       border-buttom: 1 px solid var(--slate500);
       padding-bottom: 3px;
     }
+
 </style>

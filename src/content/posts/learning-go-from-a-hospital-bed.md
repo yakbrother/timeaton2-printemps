@@ -1,7 +1,7 @@
 ---
 title: "Learning Go From a Hospital Bed"
 date: 2023-04-20T13:31:37+02:00
-description: How I decided to start learning Go and setting up a plan for the first steps.
+description: How I decided to start learning Go and set up a plan for the first steps.
 draft: false
 ---
 
