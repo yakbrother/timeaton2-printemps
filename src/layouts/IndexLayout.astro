@@ -1,122 +1,65 @@
 ---
+const { title, description, slug } = Astro.props;
+
 import Meta from "../components/Meta.astro";
-import Hero from "../components/Hero.astro";
-import Social from "../components/Social.astro";
 import Footer from "../components/Footer.astro";
-import WeirdStripes from "../components/WeirdStripes.astro";
-import IndexColumnOne from "../components/IndexColumnOne.astro";
-import IndexColumnTwo from "../components/IndexColumnTwo.astro";
-import IndexColumnThree from "../components/IndexColumnThree.astro";
 import Header from "../components/Header.astro";
+
+import "../styles/desert.css";
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <Meta />
-  </head>
+  <head> </head>
+  <Meta title={title} , description={description} />
 
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      display: grid;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    post-card {
+      background: var(--olive100);
+      border-radius: 6px;
+    }
+    post-card h3 {
+      color: var(--olive300);
+    }
+    post-care time-span `[] post-card p {
+    }
+    post-card button-span {
+    }
+
+    p {
+      color: var(--maroon700);
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
   <body>
-      <Header />
-      <container>
-        <div class="angry-grid">
-          <div id="item-0"></div>
-          <div id="item-1"><Hero /></div>
-          <div id="item-2"><Social /></div>
-          <div id="item-3"><IndexColumnOne /></div>
-          <div id="item-4"><IndexColumnTwo /></div>
-          <div id="item-5"><IndexColumnThree /></div>
-          <div id="item-6">aefk.djskdjfkdjh gl jld</div>
-        </div>
+    <div class="desert">
+      <Header title={title} , slug={slug} />
 
+      <hero></hero>
+      <halves></halves>
+      <Til />
+      <blog-posts>
+        <div class="post"></div>
+        <div class="post"></div>
+        <div class="post"></div>
         <Footer />
-        
-        <style>
-
-          container {
-            margin: auto;
-            margin-top: 100px;
-            width: 95%;
-            max-width: 1280px;
-            background: url("/desert-cheng.jpg") #d1ab9a no-repeat;
-            background-position: top;
-          }
-
-          .angry-grid {
-            display: grid;
-
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            grid-column-gap: 12px;
-            grid-row-gap: 12px;
-            height: 100%;
-          }
-
-          #item-0 {
-            grid-row-start: 1;
-            grid-column-start: 1;
-
-            grid-row-end: 2;
-            grid-column-end: 2;
-          }
-          #item-1 {
-            grid-row-start: 1;
-            grid-column-start: 2;
-
-            grid-row-end: 2;
-            grid-column-end: 5;
-          }
-          #item-2 {
-            grid-row-start: 2;
-            grid-column-start: 1;
-
-            grid-row-end: 3;
-            grid-column-end: 2;
-          }
-          #item-3 {
-            grid-row-start: 3;
-            grid-column-start: 1;
-
-            grid-row-end: 4;
-            grid-column-end: 3;
-          }
-          #item-4 {
-            grid-row-start: 3;
-            grid-column-start: 3;
-
-            grid-row-end: 4;
-            grid-column-end: 4;
-          }
-          #item-5 {
-            grid-row-start: 3;
-            grid-column-start: 4;
-
-            grid-row-end: 4;
-            grid-column-end: 5;
-          }
-          #item-6 {
-            grid-row-start: 2;
-            grid-column-start: 2;
-
-            grid-row-end: 3;
-            grid-column-end: 5;
-          }
-
-          wrapper {
-            width: 90%;
-            max-width: 1280px;
-          }
-          footer {
-            padding-top: 0;
-            margin: 0 auto;
-            max-width: 1280px;
-            width: 90%;
-          }
-
-          btn-primary 
-        </style>
-      </container>
-    </wrapper>
+      </blog-posts>
+    </div>
   </body>
+
+
 </html>
