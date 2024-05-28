@@ -1,6 +1,11 @@
 ---
-import BasicLayout from "../layouts/BasicLayout.astro";
+import BasicLayout from "./BasicLayout.astro";
 import "../styles/desert.css";
+const { frontmatter } = Astro.props;
+
+<h1>{frontmatter.title}</h1>
+<p>Written by {frontmatter.author}</p>
+<slot />
 ---
 
 <BasicLayout>

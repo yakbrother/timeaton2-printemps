@@ -1,7 +1,35 @@
 ---
-const { title, slug } = Astro.props;
+const { title, slug, description } = Astro.props;
 import WeirdStripes from "./WeirdStripes.astro";
+import Meta from "./Meta.astro"
 ---
+
+<!doctype html>
+<html lang="en">
+  <head> 
+  <Meta title={title} , description={description} />
+
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    article {
+      display: grid;
+      width: 100%;
+    }
+
+    p {
+      color: var(--maroon700);
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="desert">
 
 <header>
 
@@ -27,6 +55,7 @@ import WeirdStripes from "./WeirdStripes.astro";
   header {
     background-color: var(--slate500);
     background-image: radial-gradient(at bottom left, var(--slate500) 50%,  var(--slate100) 95%);
+    /* background-image: url(/background_head.gif); */
     color: var(--moccasin300);
     flex: none !important;
     width: 100%;

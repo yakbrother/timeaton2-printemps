@@ -1,0 +1,67 @@
+---
+const { title, description, slug } = Astro.props;
+
+import Meta from "../components/Meta.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+import "../styles/desert.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head> </head>
+  <Meta title={title} , description={description} />
+
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      display: grid;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    post-card {
+      background: var(--olive100);
+      border-radius: 6px;
+    }
+    post-card h3 {
+      color: var(--olive300);
+    }
+    post-care time-span `[] post-card p {
+    }
+    post-card tum {
+      text-agn: center;
+      display: block;
+    }
+
+    p {
+      color: var(--maroon700);
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="desert">
+      <Header title={title} , slug={slug} />
+
+      <hero></hero>
+      <halves></halves>
+      <Til />
+      <blog-posts>
+        <div class="post"></div>
+        <div class="post"></div>
+        <div class="post"></div>
+        <Footer />
+      </blog-posts>
+    </div>
+  </body>
+
+
+</html>
