@@ -2,29 +2,44 @@
 import BasicLayout from "./BasicLayout.astro";
 import "../styles/desert.css";
 const { frontmatter } = Astro.props;
-
-<h1>{frontmatter.title}</h1>
-<p>Written by {frontmatter.author}</p>
-<slot />
 ---
 
-<BasicLayout>
+<BasicLayout title="TITLE" description="DESCRIPTION">
   <article>
-    <h1>From The Blog</h1>
+    <h2><a href="/blog">From The Blog</a><h2>
+      <article-title>
+    <h1>{frontmatter.title}</h1>
+<p>Written by Tim Eaton</p>
+      </article-title>
+
+    <slot />
 
     <back-to-blog>
       <a href="/blog" class="button button-primary"> Back to blog </a>
     </back-to-blog>
 
     <style>
-      h1 {
-        size: 50%;
-        text-transform: capitalize;
-      }
-      <h2 > article {
-        width: 90%;
-        margin: auto;
-      }
+
+.article-title {
+  height: 100px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 30%;
+}
+.article-title:before {
+  content: "background-image: url("data:image/svg+xml,%3Csvg id='10015.io' viewBox='0 0 480 480' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' %3E%3Cpath fill='%23474bff' d='M371.5,265Q369,290,350.5,307Q332,324,329,368Q326,412,293.5,436.5Q261,461,225.5,438.5Q190,416,149,415.5Q108,415,119.5,361Q131,307,85.5,292Q40,277,42,240Q44,203,77,181.5Q110,160,111.5,116Q113,72,146,49Q179,26,216.5,58.5Q254,91,295.5,68.5Q337,46,356.5,81Q376,116,365.5,155.5Q355,195,364.5,217.5Q374,240,371.5,265Z' /%3E%3C/svg%3E");";
+  position: absolute;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 20%;
+  background: tomato;
+  transform: skewY(5deg);
+  z-index: -2;
+}
+
 
       @media screen and (min-width: 636px) {
         article {
