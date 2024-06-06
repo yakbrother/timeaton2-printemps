@@ -1,8 +1,7 @@
 ---
 title: Goodbye, Hospital
-date: 2023-05-17
-description: |
-  Finally, I'm back home!!!
+pubDdate: 2023-05-17
+description: Finally, I'm back home!!!
 tags:
   - life
   - learning

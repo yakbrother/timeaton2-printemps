@@ -140,8 +140,8 @@
     margin: 0;
       padding: 0;
       font-size: calc(15px + 0.390625vw);
-      color: white;
-      color: var(--desert);
+      color: var(--maroon500);
+      background-color: var(--desert);
   }
   
   body {
@@ -149,6 +149,7 @@
       text-align: left; 
       line-height: 1.7;
       color: var(--maroon500);
+      background-color: var(--desert);
     width: 100%;
     display: flex; 
     flex-direction: column; 

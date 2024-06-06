@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 2023 So Far
-publishDate: 2023-04-10
-description: |
+pubDate: 2023-04-10
+description: The year to date.
 tags:
   - Life
   - Branding

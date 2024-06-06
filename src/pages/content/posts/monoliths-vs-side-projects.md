@@ -1,8 +1,7 @@
 ---
 title: Monoliths vs Side Projects
-date: 2023-05-20
-description: |
-  Thoughts after working so long on a monolithic project
+pubdate: 2023-05-20
+description: Thoughts after working so long on a monolithic project
 tags:
   - backend
   - architecture

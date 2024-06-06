@@ -1,8 +1,7 @@
 ---
 title: Job Searchin’ Blues
 date: 2023-07-21
-description: |
-  Ain't got no money, ain't got no job...
+description: Ain't got no money, ain't got no job...
 tags:
   - career
   - life
