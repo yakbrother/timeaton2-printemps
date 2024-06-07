@@ -1,6 +1,6 @@
 ---
 title: Monoliths vs Side Projects
-pubdate: 2023-05-20
+pubDate: 2023-05-20
 description: Thoughts after working so long on a monolithic project
 tags:
   - backend
