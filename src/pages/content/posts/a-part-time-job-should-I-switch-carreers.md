@@ -1,6 +1,7 @@
 ---
-title: Pqrt Time Teaching
-description: My First French
+description: Part-time teaching
+title: My First French Job
+pubDate: 2023-11-01
 tags:
   - Life
   - Teaching

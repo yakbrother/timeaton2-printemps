@@ -1,7 +1,11 @@
 ---
 title: "Learning Go From a Hospital Bed"
-date: 2023-04-20T13:31:37+02:00
+pubDate: 2023-04-20
 description: How I decided to start learning Go and set up a plan for the first steps.
+tags:
+  - Go
+  - Code
+  - Learning
 draft: false
 ---
 
