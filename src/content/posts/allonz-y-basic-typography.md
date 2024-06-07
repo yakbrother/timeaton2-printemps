@@ -1,6 +1,6 @@
 ---
 title: Allonz-Y - Basic CSS Typography
-date: 2023-05-14
+pubDate: 2023-05-14
 description: A few notes on starting my first UI framework.
 tags:
   - CSS
