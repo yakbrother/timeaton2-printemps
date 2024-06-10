@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("posts");
-
 const title = "My Writings";
 import BasicLayout from "../layouts/BasicLayout.astro";
 import "../styles/desert.css";
+import BlogPost from "../components/BlogPost.astro";
 ---
 
 <BasicLayout title="My Writings" slug="writings">
@@ -16,7 +16,10 @@ import "../styles/desert.css";
   <div class="left-sidebar-grid">
     <main class="main-content">
       <div id="page-title"><h2>{title}</h2></div>
-      
+      <ul>
+        
+        {allPosts.map((post) => <BlogPost url={"/posts/" + post.slug} title={post.data.title} />)}
+      </ul>
 
     </main>
     <section class="left-sidebar">

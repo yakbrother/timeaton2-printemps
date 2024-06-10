@@ -1,71 +1,53 @@
 ---
-const { title, description, slug } = Astro.props;
-
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-
-import "../styles/desert.css";
+import BasicLayout from "./BasicLayout.astro";
 ---
 
-<Header title={title} , description={description}, slug-{slug} />
-<style is:global>
-  .desert {
-    background-image: url("/desert_2400_1.jpg");
-  }
-</style>
+<BasicLayout title="Home" slug="home">
+  <style is:global>
+    .desert {
+      background-image: url("/desert_2400_1.jpg");
+    }
+  </style>
 
 
-<container>
-      <big-hero>
-        <h2>I love problems.</h2>
-        <h3>
-          I love find them, anticipate them, and fix them with diverse teams.
-        </h3>
-      </big-hero>
+<article>
+  <div id="big-hero">
+    <h2 style="color: #C03F1B;">I love problems, in technology and in businesses.</h2>
+    <h3 style="color: #E2542C;">I love to find them and anticipate them.</h3>
+    <h3 style="color: #E2542C;">I love to work with diverse teams to fix them.</h3>
+    <p>Interested? <a href="mailto:tim@timeaton.dev">Let's talk</a></p>
+  </div>
+d="page-title"><h2>About Me</h2></div>
+      <p>
+        I worked for many year as Fullstack Developer with a strength in PHP and
+       
 
-      <style>
-        big-hero {
-          width: 100%
-          padding-top: 200px;
-          padding-bottom:24px;
-        }
-      </style>
+  <style>
+    div#big-hero {
+      color: #E2542C important!;
+      width: 100%;
+      padding-top: 200px;
+      padding-bottom:24px;
+      text-align: center;
+    }
+    div#big-hero h2,
+    div#big-hero h1,
+    div#big-hero p,
+      color: #E2542C important!;
+      text-align: center;
+    }
+  </style>
 
-    <cartoon-text>
-      <intro-text>
-        <p>Whereas a common understanding of these rights and freedoms is Whereas a common understanding of these rights and freedoms is</p>
-        <p>Whereas a common understanding of these rights and freedoms is Whereas a common understanding of these rights and freedoms is</p>
-      </intro-text>
-      <mobile-hide>
-        Picture
-      </mobile-hide>
-    </cartoon-text>
-    
-    <today-i-learned>
-      <h3>Today I Learned ...</h3>
-      <p>Things can be two things. <span>6 Apr 2024   </span></p>
-    </today-i-learned>
-    <recent-blogs>
-      <blog-card>
-        <strong>Blah Blah</strong>
-        <p>You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.</p>
-        <button>Read More</button>
-      </blog-card>
-      <blog-card>
-        <strong>My name is jonas</strong>
-        <p>Un jour, alors qu'elle se lassait de l'ennui de sa demeure, elle décida de mettre en œuvre un plan tordu pour soulager sa propre paresse. "Pourquoi devrais-je gaspiller mon énergie à nettoyer cette maudite maison alors que je pourrais transformer des innocents en bêtes de somme pour le faire à ma place ?", murmura-t-elle avec un sourire vicieux.</p>
-        <button>Read More</button>
-      </blog-card>
-      <blog-card>
-        <strong>Deltron 3030</strong>
-        <p>Arrête un peu ta musique!
-          Ne sois pas antipathique!
-          Ne me pique pas!
-        <button>Read More</button>
-      </blog-card>
-    </recent-blogs>
-    <style>
-      
-    </style>
 
-<Footer />
+  
+  
+  <section class="left-sidebar-grid">
+    <main class="main-content">
+    </main>
+  
+
+
+    <section class="left-sidebar">
+    </section>
+</section>
+</BasicLayout>

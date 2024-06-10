@@ -1,0 +1,71 @@
+---
+const { title, description, slug } = Astro.props;
+
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+import "../styles/desert.css";
+---
+
+<Header title={title} , description={description}, slug-{slug} />
+<style is:global>
+  .desert {
+    background-image: url("/desert_2400_1.jpg");
+  }
+</style>
+
+
+<container>
+      <big-hero>
+        <h2>I love problems.</h2>
+        <h3>
+          I love find them, anticipate them, and fix them with diverse teams.
+        </h3>
+      </big-hero>
+
+      <style>
+        big-hero {
+          width: 100%
+          padding-top: 200px;
+          padding-bottom:24px;
+        }
+      </style>
+
+    <cartoon-text>
+      <intro-text>
+        <p>Whereas a common understanding of these rights and freedoms is Whereas a common understanding of these rights and freedoms is</p>
+        <p>Whereas a common understanding of these rights and freedoms is Whereas a common understanding of these rights and freedoms is</p>
+      </intro-text>
+      <mobile-hide>
+        Picture
+      </mobile-hide>
+    </cartoon-text>
+    
+    <today-i-learned>
+      <h3>Today I Learned ...</h3>
+      <p>Things can be two things. <span>6 Apr 2024   </span></p>
+    </today-i-learned>
+    <recent-blogs>
+      <blog-card>
+        <strong>Blah Blah</strong>
+        <p>You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.</p>
+        <button>Read More</button>
+      </blog-card>
+      <blog-card>
+        <strong>My name is jonas</strong>
+        <p>Un jour, alors qu'elle se lassait de l'ennui de sa demeure, elle décida de mettre en œuvre un plan tordu pour soulager sa propre paresse. "Pourquoi devrais-je gaspiller mon énergie à nettoyer cette maudite maison alors que je pourrais transformer des innocents en bêtes de somme pour le faire à ma place ?", murmura-t-elle avec un sourire vicieux.</p>
+        <button>Read More</button>
+      </blog-card>
+      <blog-card>
+        <strong>Deltron 3030</strong>
+        <p>Arrête un peu ta musique!
+          Ne sois pas antipathique!
+          Ne me pique pas!
+        <button>Read More</button>
+      </blog-card>
+    </recent-blogs>
+    <style>
+      
+    </style>
+
+<Footer />

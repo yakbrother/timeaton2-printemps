@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 2023 So Far
 pubDate: 2023-04-10
-description: The year to date.
+description: An intro to my new site
 tags:
   - Life
   - Branding

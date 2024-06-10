@@ -1,5 +1,5 @@
 ---
-title: Learning Go (golang) - First Update
+title: Learning Go  - First Update
 pubDate: 2023-04-29
 description: A new path with video tutorials
 tags:
