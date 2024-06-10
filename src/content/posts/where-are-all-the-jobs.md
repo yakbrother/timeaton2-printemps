@@ -1,5 +1,5 @@
 ---
-title: Job Searchin’ Blues
+title: Job Searchin' Blues
 pubDate: 2023-07-21
 description: Ain't got no money, ain't got no job...
 tags:

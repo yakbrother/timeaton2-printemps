@@ -13,11 +13,13 @@ import Header from "../components/Header.astro";
 <!doctype html>
 <html lang="en">
   <head>
-    <Meta />
+    
   </head>
 
   <body>
+    <wrapper>
       <Header />
+      <WeirdStripes />
       <container>
         <div class="angry-grid">
           <div id="item-0"></div>
@@ -33,13 +35,8 @@ import Header from "../components/Header.astro";
         
         <style>
 
-          container {
-            margin: auto;
-            margin-top: 100px;
-            width: 95%;
-            max-width: 1280px;
-            background: url("/desert-cheng.jpg") #d1ab9a no-repeat;
-            background-position: top;
+          wrapper {
+            background: #d1ab9a;
           }
 
           .angry-grid {
@@ -103,15 +100,14 @@ import Header from "../components/Header.astro";
             grid-column-end: 5;
           }
 
-          wrapper {
-            width: 90%;
+          header {
+            width: 100%;
+            maring: 0 auto;
             max-width: 1280px;
           }
           footer {
             padding-top: 0;
-            margin: 0 auto;
-            max-width: 1280px;
-            width: 90%;
+            width: 100%;
           }
 
           btn-primary 

@@ -1,9 +1,10 @@
 ---
 const { title, description, slug } = Astro.props;
 
-import Meta from "../components/Meta.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Meta from "../../components/Meta.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import { {psts1                   } } from "../components/posts.astro";
 
 import "../styles/desert.css";
 ---
@@ -37,15 +38,10 @@ import "../styles/desert.css";
     }
     post-care time-span `[] post-card p {
     }
-    post-card tum {
+    post-card tum     {
       text-agn: center;
       display: block;
-    }
-
-    p {
-      color: var(--maroon700);
-      font-family: "Poppins", sans-serif;
-    }
+    }]
   </style>
   <body>
     <div class="desert">

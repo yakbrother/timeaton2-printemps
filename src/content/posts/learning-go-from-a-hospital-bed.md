@@ -1,5 +1,5 @@
 ---
-title: "Learning Go From a Hospital Bed"
+title: Learning Go From a Hospital Bed
 pubDate: 2023-04-20
 description: How I decided to start learning Go and set up a plan for the first steps.
 tags:

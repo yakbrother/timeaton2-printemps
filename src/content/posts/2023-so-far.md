@@ -1,7 +1,7 @@
 ---
 title: 2023 So Far
 pubDate: 2023-04-10
-description: An intro to site
+description: An intro to my new site
 tags:
   - Life
   - Branding
